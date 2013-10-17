@@ -1,0 +1,16 @@
+http://www.e-radio.gr/player/playerX.asp?sID=145&cn=novasport&stitle=Nova%Sport%Fm%94,6&codecID=2&pt=1&weblink=sportfm%2Elive24%2Egr%2Fsportfm7712
+http://www.e-radio.gr/player/playerX.asp?sID=208&cn=liberofm&stitle=Libero%107,4&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8081
+http://www.e-radio.gr/player/playerX.asp?sID=206&cn=athletic&stitle=Athletic%104,2&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8052
+http://www.e-radio.gr/player/playerX.asp?sID=632&cn=arenasports&stitle=Arena%Sports%89,4&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8418
+http://www.e-radio.gr/player/playerX.asp?sID=841&cn=sentrafm&stitle=Sentra%Fm%103,3&codecID=2&pt=1&weblink=sentrafm%2Elive24%2Egr%2Fsentrafm
+http://www.e-radio.gr/player/playerX.asp?sID=110&cn=metropolis&stitle=Metropolis%95,5&codecID=3&pt=2&weblink=streamx1%2Egreekradios%2Egr%3A8000
+http://www.e-radio.gr/player/playerX.asp?sID=232&cn=topfm&stitle=Top%Fm%102,4&codecID=3&pt=2&weblink=live3%2Eistoikona%2Ecom%3A8376
+http://www.e-radio.gr/player/playerX.asp?sID=11&cn=kissavos&stitle=Radiofonia%Kissavou%97,8&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8103
+http://www.e-radio.gr/player/playerX.asp?sID=870&cn=motomaniac&stitle=MotoManiac&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8400
+http://www.e-radio.gr/player/playerX.asp?sID=201&cn=radionetlamia&stitle=Radio%Net%101,9&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fradionetlamia
+http://www.e-radio.gr/player/playerX.asp?sID=312&cn=anemos937&stitle=Anemos%93,7&codecID=3&pt=2&weblink=stream2%2Eproradio%2Egr%3A8004%2Fanemos
+http://www.e-radio.gr/player/playerX.asp?sID=699&cn=dolceradio&stitle=Sport%Fm%89,5&codecID=3&pt=2&weblink=www%2Egointernet%2Egr%3A8005
+http://www.e-radio.gr/player/playerX.asp?sID=829&cn=sportfm&stitle=Sport%Fm%103,3&codecID=3&pt=2&weblink=goodradio%2Egr%3A9106
+http://www.e-radio.gr/player/playerX.asp?sID=1801&cn=sportfmvolos&stitle=Sport%FM%89,5&codecID=2&pt=1&weblink=85%2E14%2E6%2E155%3A8005
+http://www.e-radio.gr/player/playerX.asp?sID=2136&cn=athlitikos&stitle=Athlitikos%106,7&codecID=3&pt=2&weblink=streaming%2Emultiserver%2Egr%3A8026
+http://www.e-radio.gr/player/playerX.asp?sID=1802&cn=superfm896&stitle=Super%FM%89,6&codecID=2&pt=1&weblink=s3%2Eonweb%2Egr%3A8454

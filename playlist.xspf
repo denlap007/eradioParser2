@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<playlist xmlns="http://xspf.org/ns/0/" version="1">
+  <title>My Playlist</title>
+  <trackList>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Sky Radio 99,2</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Hxo Fm 102,7</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Action Radio 98,2</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Konitsa FM 91</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Arta 101,5</title>
+    </track>
+    <track>
+      <location>http://live.onestreaming.com/alpha981</location>
+      <title>Alpha 98,1</title>
+    </track>
+    <track>
+      <location>http://live.onestreaming.com/studioe</location>
+      <title>Studio E 103</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Romeos 94</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Faros 92,7</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Energy 93,4</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Ioannina Deejay 89,6</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Prevezas 93</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Prisma 95,1</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Safari 104,7</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Star 95,7</title>
+    </track>
+    <track>
+      <location>http://907ioannina.live24.gr/907ioannina</location>
+      <title>Best 90,7</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Epirus 94,5</title>
+    </track>
+  </trackList>
+</playlist>
