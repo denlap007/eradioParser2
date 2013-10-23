@@ -4,64 +4,80 @@
   <title>My Playlist</title>
   <trackList>
     <track>
-      <location>http://sportfm.live24.gr/sportfm7712</location>
-      <title>Nova Sport Fm 94,6</title>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Studio 3 103,5</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Libero 107,4</title>
+      <title>Kritiko Diadiktyako Radiofono</title>
+    </track>
+    <track>
+      <location>http://live.onestreaming.com/elpar</location>
+      <title>Elliniko Paradosiako</title>
+    </track>
+    <track>
+      <location>http://live.onestreaming.com/antonisradio</location>
+      <title>Antonis Radio</title>
+    </track>
+    <track>
+      <location>http://live.onestreaming.com/koziani</location>
+      <title>Internet Radio Koziani</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Athletic 104,2</title>
+      <title>Radio Faros 92,7</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Arena Sports 89,4</title>
-    </track>
-    <track>
-      <location>http://sentrafm.live24.gr/sentrafm</location>
-      <title>Sentra Fm 103,3</title>
+      <title>e-Pontos</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Metropolis 95,5</title>
+      <title>Creta Planet</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Top Fm 102,4</title>
+      <title>Erotokritos Fm 87,9</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radiofonia Kissavou 97,8</title>
+      <title>Mousiko Kanali 101,3</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>MotoManiac</title>
-    </track>
-    <track>
-      <location>http://live.onestreaming.com/radionetlamia</location>
-      <title>Radio Net 101,9</title>
+      <title>Paradosiako Thessalias</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Anemos 93,7</title>
+      <title>Paradosiakos 106,6</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Sport Fm 89,5</title>
+      <title>Radio Megalonisos 89,8</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Sport Fm 103,3</title>
+      <title>Kritorama FM 97,9</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Athlitikos 106,7</title>
+      <title>Radio Epirus 94,5</title>
     </track>
     <track>
-      <location>http://s3.onweb.gr:8454</location>
-      <title>Super FM 89,6</title>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Nostalgia</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Radio Rizites 92,4</title>
+    </track>
+    <track>
+      <location>http://m2.onweb.gr/amorefm</location>
+      <title>Amore Fm 107,9</title>
+    </track>
+    <track>
+      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <title>Kritikos 88,7</title>
     </track>
   </trackList>
 </playlist>

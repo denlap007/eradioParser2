@@ -1,9 +1,9 @@
 /**
-	eradioParser: This program extracts the radio station 
-	links along with their names, found on http://e-radio.gr, 
-	and creates a playlist.
+	eradioParser: This program guides the user through 
+        a graphical user interface to create playlists 
+        from the stations registered on http://e-radio.gr
     
-	Copyright (C) 2012  Lappas Dionysis
+	Copyright (C) 2013  Lappas Dionysis
     
     This file is part of eradioParser.
 

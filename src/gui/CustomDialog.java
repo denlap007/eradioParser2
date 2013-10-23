@@ -1,12 +1,32 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+	eradioParser: This program guides the user through 
+        a graphical user interface to create playlists 
+        from the stations registered on http://e-radio.gr
+    
+	Copyright (C) 2013  Lappas Dionysis
+    
+    This file is part of eradioParser.
+
+    eradioParser is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    eradioParser is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+    
+    You may contact the author at: dio@freelabs.net
  */
 package gui;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
-import static noThreads.DefaultCaller.*;
+import static noThreads.DefaultCaller.theUrls;
 import org.jsoup.select.Elements;
 
 /**
@@ -187,8 +207,6 @@ public class CustomDialog extends javax.swing.JDialog {
                 //first add the items to the playlist
                 tmp = (String) listModel1.elementAt(list1SelectedIndices[i]-i);
                 listModel3.addElement(tmp);
-             
-                System.out.println("this is index: "+list1SelectedIndices[i]);
                 
                 //remove item from 1st list
                 listModel1.remove(list1SelectedIndices[i]-i);
@@ -263,15 +281,14 @@ public class CustomDialog extends javax.swing.JDialog {
 
         theUrls.clear();
         TheGui.JDialogClosed = true;
-        System.out.print("window closed");
     }//GEN-LAST:event_formWindowClosing
 
     private Elements categoryLinks, locationLinks;
     private String[] locations;
     private String[] categories;
     private DefaultListModel listModel1;
-    private DefaultListModel listModel2;
-    private DefaultListModel listModel3;
+    private DefaultListModel<String> listModel2;
+    private DefaultListModel<String> listModel3;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

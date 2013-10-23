@@ -1,6 +1,26 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+	eradioParser: This program guides the user through 
+        a graphical user interface to create playlists 
+        from the stations registered on http://e-radio.gr
+    
+	Copyright (C) 2013  Lappas Dionysis
+    
+    This file is part of eradioParser.
+
+    eradioParser is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    eradioParser is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+    
+    You may contact the author at: dio@freelabs.net
  */
 package gui;
 import java.io.File;
@@ -33,7 +53,7 @@ public class TheGui extends javax.swing.JFrame {
     public TheGui() {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.setTitle("Eradioparser - create playlists");
+        this.setTitle("Eradioparser v2.0 - create playlists");
         JDialogClosed = false;
     }
 
@@ -332,7 +352,7 @@ public class TheGui extends javax.swing.JFrame {
                 print("...Processing location <"+
 		    			 StringEscapeUtils.unescapeHtml4(locationLinks.get(choice).html())+
 		    			 ">.");
-                 Thread thr = new Thread(new CoreCode());
+                Thread thr = new Thread(new CoreCode());
                 thr.start();                
             }
         }
@@ -375,9 +395,6 @@ public class TheGui extends javax.swing.JFrame {
             CustomDialog custom = new CustomDialog(TheGui.this, true, theLocations, theCategories, locationLinks, categoryLinks);
             custom.setVisible(true);
             
-            System.out.println("testing after second windos");
-
-            
             if (JDialogClosed==true){
                 jRadioButton1.setEnabled(true);
                 jRadioButton2.setEnabled(true);
@@ -388,262 +405,10 @@ public class TheGui extends javax.swing.JFrame {
             else{
                 Thread thr = new Thread(new CoreCode());
                 thr.start();
-            }
-            
-
-            
-               
-
-   
-            
+            }   
         }
     }
-            
-    
-      /*  private class MenuOption4 implements Runnable{
-
-        @Override
-        public void run() {
-            DefaultCaller caller = new DefaultCaller();
-            final String URL= "http://e-radio.gr";
-            Document doc = null;
-            
-            final int YEARLY_RATING = 10;
-            doc = parseUrl(URL, 0);
-			
-            if(doc==null)
-                JOptionPane.showMessageDialog(TheGui.this, "No internet connection! Try again!", "No connection", JOptionPane.ERROR_MESSAGE);
-			
-            Elements ratingsLinks= doc.select("div[class=menuFly]").select("li").select("a[class=hide]");
-            
-            ArrayList<String> ratingsTitles = new ArrayList<String>();
-            
-            for(int i=0; i< ratingsLinks.size();i++)
-                ratingsTitles.add(StringEscapeUtils.unescapeHtml4(ratingsLinks.get(i).html()));
-            
-            String[] ratingsTitlesArray = new String[ratingsTitles.size()];
-            ratingsTitlesArray = ratingsTitles.toArray(ratingsTitlesArray);
-            String input = (String) JOptionPane.showInputDialog(TheGui.this, "Please make a choice",
-        "Station Ratings", JOptionPane.QUESTION_MESSAGE, null, ratingsTitlesArray, ratingsTitlesArray[0]); 
-            
-            int choice = ratingsTitles.indexOf(input);
-            
-            if(choice<=ratingsLinks.size() && choice>=1){
-                //Get the DIV element with class "menuFly"
-		Elements div = doc.select("div[class=menuFly]") ;
-                //div Elements list has only one element. So get the children of div
-		Elements ul = div.get(0).children();
-		//ul Elements list has only one element. So get the children of ul
-		Elements li = ul.get(0).children();
-	    			
-		//remove blank elements
-		for(int j=0; j< li.size();j++){
-                    if(li.get(j).hasText()==false)
-                    li.remove(li.get(j));
-		}
-                
-                //get the title of user choice and print it out
-		print("\n%s", StringEscapeUtils.unescapeHtml4(ratingsLinks.get(choice).html())+"\n");
-  
-		//check if there is a sub-menu
-		Elements ulTag = li.get(choice).select("ul");
-		if(ulTag.hasText()==true){
-                    Elements subMenuLinks = ulTag.select("li").select("a[href]");
-                    
-                    ArrayList<String> subMenuNames = new ArrayList<String>();
-                    
-                    for(int j=0; j<subMenuLinks.size(); j++){
-                        print("%s.  %s ",j+1, StringEscapeUtils.unescapeHtml4(subMenuLinks.get(j).html()));
-                        subMenuNames.add(StringEscapeUtils.unescapeHtml4(subMenuLinks.get(j).html()));
-                    }
-                    String[] subMenuNamesArray = new String[subMenuNames.size()];
-                    subMenuNamesArray = subMenuNames.toArray(subMenuNamesArray);
-                    String input2 = (String) JOptionPane.showInputDialog(TheGui.this, "Please make a choice",
-                     "Station Ratings", JOptionPane.QUESTION_MESSAGE, null, subMenuNamesArray, subMenuNamesArray[0]);
-
-                    choice = subMenuNames.indexOf(input2);
-                    
-                    print("this is choice " + choice);
-                    
-                    theUrls.add(subMenuLinks.get(choice).attr("abs:href"));
-                    JOptionPane.showMessageDialog(TheGui.this, "Processing <" + StringEscapeUtils.unescapeHtml4(subMenuLinks.get(choice).html()) + ">.");
-                       print("...Processing <"+
-		    			 StringEscapeUtils.unescapeHtml4(subMenuLinks.get(choice).html())+
-		    			 ">.");
-                     Thread thr = new Thread(new CoreCode());
-                     thr.start();
-                }
-                else{
-                    if(choice==YEARLY_RATING){
-                        String  url = li.get(choice).select("a[href").attr("abs:href");
-                        doc = parseUrl(url, 0);
-			
-                        if(doc!=null){
-                            Elements yearTopSubMenuLinks = doc.select("div[id=maintabsid]").select("a[href]");
-						
-			ArrayList<String> yearTopSubMenuNames = new ArrayList<String>();
-                            
-                            //print the sub-menu
-			for(int i=0; i<yearTopSubMenuLinks.size(); i++){
-                            yearTopSubMenuNames.add(StringEscapeUtils.unescapeHtml4(yearTopSubMenuLinks.get(i).html()));
-                            print("%s.  %s",i+1, StringEscapeUtils.unescapeHtml4(yearTopSubMenuLinks.get(i).html()));
-                        }
-
-                        String[] theYearTopSubMenuNamesArray = new String[yearTopSubMenuNames.size()];
-                    theYearTopSubMenuNamesArray = yearTopSubMenuNames.toArray(theYearTopSubMenuNamesArray);
-                    String input2 = (String) JOptionPane.showInputDialog(TheGui.this, "Please make a choice",
-                     "Station Ratings", JOptionPane.QUESTION_MESSAGE, null, theYearTopSubMenuNamesArray, theYearTopSubMenuNamesArray[0]);
-                    
-                    choice = yearTopSubMenuNames.indexOf(input);
-                        
-                       
-							if(choice<=yearTopSubMenuLinks.size() && choice>=1){
-								if(choice==1){
-									theUrls.add(yearTopSubMenuLinks.get(choice).attr("abs:href"));
-                                                                        Thread thr = new Thread(new CoreCode());
-                                                                        thr.start();
-									print("...Processing the <"+
-											StringEscapeUtils.unescapeHtml4(yearTopSubMenuLinks.get(choice).html())+
-											"> category");
-								}else if(choice==2){
-									String link= yearTopSubMenuLinks.get(choice).attr("abs:href");
-									doc = parseUrl(link, 0);
-									
-									//print menu title
-									print("\n%s", StringEscapeUtils.unescapeHtml4(yearTopSubMenuLinks.get(choice).html())+"\n");
-									
-									if(doc!=null){
-										Elements elem = doc.select("select[id=selectoption]").select("option[value]");
-										ArrayList<Integer> nums = new ArrayList<Integer>();
-                                                                                ArrayList<String> numsTitles = new ArrayList<String>();
-										
-										for(int i=0; i<elem.size(); i++ ){
-											//get the select category values and print the sub-menu
-											int num = Integer.parseInt(elem.get(i).attr("value"));								
-											//add them to list
-											nums.add(num);
-                                                                                        numsTitles.add(StringEscapeUtils.unescapeHtml4(elem.get(i).html().replace("Select category: ", "")));
-											print("%s.  %s", i+1, StringEscapeUtils.unescapeHtml4(elem.get(i).html().replace("Select category: ", "")));	
-                                                                                }
-                                                                                String[] numsTitlesArray = new String[numsTitles.size()];
-                                                                                theYearTopSubMenuNamesArray = numsTitles.toArray(numsTitlesArray);
-                                                                                String input3 = (String) JOptionPane.showInputDialog(TheGui.this, "Please make a choice",
-                                                                                     "Station Ratings", JOptionPane.QUESTION_MESSAGE, null, numsTitlesArray, numsTitlesArray[0]);
-                                                                                
-                                                                                choice = numsTitles.indexOf(input);
-                                                                                
-                                                                                JOptionPane.showMessageDialog(TheGui.this, "TESTING");
-              	
-										if(choice<=elem.size() && choice>=1){
-											int num = nums.get(choice);
-											String added = "max=100&id="+num+"&";
-											String newlink = link.replace("max=100&", added);
-                                                                                        
-                                                                                        theUrls.add(newlink);
-                                                                                        JOptionPane.showMessageDialog(TheGui.this, "Processing <" + StringEscapeUtils.unescapeHtml4(elem.get(choice-1).html().replace("Select category: ", "")) + ">.");
-                                                                                        print("...Processing <"+
-                                                                                                StringEscapeUtils.unescapeHtml4(elem.get(choice).html().replace("Select category: ", "")) +  ">.");
-                                                                                        Thread thr = new Thread(new CoreCode());
-                                                                                        thr.start();
-             
-											System.out.println("...Processing the <"+
-													StringEscapeUtils.unescapeHtml4(elem.get(choice).html().replace("Select category: ", ""))+
-													"> category");
-											print(elem.get(choice).select("a[href]").attr("abs:href"));
-										}else{
-											System.out.println("Wrong selection!");
-											System.out.println("Exiting program...");
-											System.exit(1);
-										}		
-									}else{
-										System.out.println("ERROR: Cannot get links from server!");
-										System.out.println("Exiting program...");
-										System.exit(1);
-									}
-								}else{
-									String link= yearTopSubMenuLinks.get(choice).attr("abs:href");
-									doc = parseUrl(link, 0);
-									
-									//print menu title
-									print("\n%s", StringEscapeUtils.unescapeHtml4(yearTopSubMenuLinks.get(choice).html())+"\n");
-									
-									if(doc!=null){
-										Elements elem = doc.select("select[id=selectoption]").select("option[value]");
-										ArrayList<Integer> nums = new ArrayList<Integer>();
-                                                                                ArrayList<String> numsTitles = new ArrayList<String>();
-										
-										for(int i=0; i<elem.size(); i++ ){
-											//get the select category values and print the sub-menu
-											int num = Integer.parseInt(elem.get(i).attr("value"));								
-											//add them to list
-											nums.add(num);
-                                                                                        numsTitles.add(StringEscapeUtils.unescapeHtml4(elem.get(i).html().replace("Select Location: ", "")));
-											print("%s.  %s", i+1, StringEscapeUtils.unescapeHtml4(elem.get(i).html().replace("Select location: ", "")));
-											}
-										
-										String[] numsTitlesArray = new String[numsTitles.size()];
-                                                                                theYearTopSubMenuNamesArray = numsTitles.toArray(numsTitlesArray);
-                                                                                String input3 = (String) JOptionPane.showInputDialog(TheGui.this, "Please make a choice",
-                                                                                     "Station Location", JOptionPane.QUESTION_MESSAGE, null, numsTitlesArray, numsTitlesArray[0]);
-                                                                                //read user input//read user input
-                                                                                choice = numsTitles.indexOf(input);
-                                                                                
-                                                                                JOptionPane.showMessageDialog(TheGui.this, "TESTING");
-	
-										if(choice<=elem.size() && choice>=1){
-											int num = nums.get(choice);
-											String[] linkParts = link.split("&", 4);
-											String finalLink = linkParts[0]+"&"+linkParts[1]+"&"+"id="+num+"&"+linkParts[3];
-
-											//print("\nlink: %s \n link2: %s \n link3: %s \n link: %s \nsize: %s", linkParts[0], linkParts[1], linkParts[2], linkParts[3], linkParts.length); // DEBUG print
-											//print(finalLink);
-											
-											theUrls.add(finalLink);
-                                                                                        JOptionPane.showMessageDialog(TheGui.this, "Processing <" + StringEscapeUtils.unescapeHtml4(elem.get(choice-1).html().replace("Select category: ", "")) + ">.");
-											
-                                                                                        Thread thr = new Thread(new CoreCode());
-                                                                                        thr.start();                                                                                        
-                                                                                        
-                                                                                        System.out.println("...Processing the <"+
-													StringEscapeUtils.unescapeHtml4(elem.get(choice).html().replace("Select category: ", ""))+
-													"> category");
-											print(elem.get(choice).select("a[href]").attr("abs:href"));
-										}else{
-											System.out.println("Wrong selection!");
-											System.out.println("Exiting program...");
-											System.exit(1);
-										}		
-									}else{
-										System.out.println("ERROR: Cannot get links from server!");
-										System.out.println("Exiting program...");
-										System.exit(1);
-									}									
-								}
-							}else{
-								System.out.println("Wrong selection!");
-								System.out.println("Exiting program...");
-								System.exit(1);
-							}	
-						}else{
-							System.out.println("ERROR: Cannot get links from server!");
-							System.out.println("Exiting program...");
-							System.exit(1);
-						}
-					}else{
-                                                theUrls.add(li.get(choice-1).select("a[href").attr("abs:href"));
-                                                Thread thr = new Thread(new CoreCode());
-                                                thr.start();
-						System.out.println("...Processing the <"+
-								StringEscapeUtils.unescapeHtml4(ratingsLinks.get(choice-1).html())+
-                                                        
-								"> category");
-						print(li.get(choice-1).select("a[href]").attr("abs:href") );	
-					}
-        }
-                     }
-        }
-            
-        }*/
+      
     
     public class CoreCode implements Runnable{
 
@@ -656,7 +421,7 @@ public class TheGui extends javax.swing.JFrame {
             ArrayList<String> diskFiles = new ArrayList<>();    
             //variables that hold time in msec, in order to calculate
             //how much time lasts a program execution
-            long total_time=0, startTime=0, endTime=0;
+            long total_time=0, startTime, endTime;
             startTime = System.currentTimeMillis();
             /*
             * Create an object of Class ParseLevel0 in order to get 
@@ -692,13 +457,7 @@ public class TheGui extends javax.swing.JFrame {
             Playlist p = new Playlist();
             try {
                 p.createPlaylist();
-            } catch (IOException ex) {
-                Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (DocumentException ex) {
-                Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (SAXException ex) {
-                Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ParserConfigurationException ex) {
+            } catch (    IOException | DocumentException | SAXException | ParserConfigurationException ex) {
                 Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
             }
 		
@@ -710,12 +469,14 @@ public class TheGui extends javax.swing.JFrame {
             diskFiles.add(pl1.getTitlesFileNme());
             diskFiles.add(pl2.getEradioLinksFileName());
             diskFiles.add(pl2.getLinks2FileName());
-            File tmp = new File(pl1.getLinksFileName());
-            String thePath = tmp.getAbsolutePath();
+
             for(String name : diskFiles){
                 File a = new File(name);
                 a.delete();
             }
+            
+            File tmp = new File("playlist.xspf");
+            String thePath = tmp.getAbsolutePath();
 		
             jTextArea1.append("\n\nRUN SUMMARY:\n" +
             "Playlist successfully generated! \n"+
@@ -728,12 +489,13 @@ public class TheGui extends javax.swing.JFrame {
 				"/"+
 				pl1.getStationLinks1().size());
             
-            JOptionPane.showMessageDialog(TheGui.this, "Playlist successfully generated to: " 
+            JOptionPane.showMessageDialog(TheGui.this, "Playlist created to: " 
                     + newline 
                     + newline
                     + thePath 
                     + newline
-                    + "Exiting...");   
+                    + newline
+                    + "The program will now exit...");   
             System.exit(1);
     }
         
@@ -795,7 +557,7 @@ public class TheGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        JOptionPane.showMessageDialog(this, "Program created by: Lappas Dionysis (Dio)     \n\nUnder GPL v3.0 license");
+        JOptionPane.showMessageDialog(this, "Ccreated by: Lappas Dionysis (Dio)     \n\nUnder GPL v3.0 license");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
