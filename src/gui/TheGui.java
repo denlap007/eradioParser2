@@ -557,7 +557,11 @@ public class TheGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        JOptionPane.showMessageDialog(this, "Ccreated by: Lappas Dionysis (Dio)     \n\nUnder GPL v3.0 license");
+        JOptionPane.showMessageDialog(this, "EradioParser v2.0 "
+                +newline
+                +"Copyright (C) 2013 Lappas Dionysis "
+                +newline
+                +"Released under the GNU General Public License v3.0");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
