@@ -4,72 +4,64 @@
   <title>My Playlist</title>
   <trackList>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Sky Radio 99,2</title>
+      <location>http://sportfm.live24.gr/sportfm7712</location>
+      <title>Nova Sport Fm 94,6</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Hxo Fm 102,7</title>
+      <title>Libero 107,4</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Action Radio 98,2</title>
+      <title>Athletic 104,2</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Konitsa FM 91</title>
+      <title>Arena Sports 89,4</title>
+    </track>
+    <track>
+      <location>http://sentrafm.live24.gr/sentrafm</location>
+      <title>Sentra Fm 103,3</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Arta 101,5</title>
-    </track>
-    <track>
-      <location>http://live.onestreaming.com/alpha981</location>
-      <title>Alpha 98,1</title>
-    </track>
-    <track>
-      <location>http://live.onestreaming.com/studioe</location>
-      <title>Studio E 103</title>
+      <title>Metropolis 95,5</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Romeos 94</title>
+      <title>Top Fm 102,4</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Faros 92,7</title>
+      <title>Radiofonia Kissavou 97,8</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Energy 93,4</title>
+      <title>MotoManiac</title>
+    </track>
+    <track>
+      <location>http://live.onestreaming.com/radionetlamia</location>
+      <title>Radio Net 101,9</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Ioannina Deejay 89,6</title>
+      <title>Anemos 93,7</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Prevezas 93</title>
+      <title>Sport Fm 89,5</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Prisma 95,1</title>
+      <title>Sport Fm 103,3</title>
     </track>
     <track>
       <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Safari 104,7</title>
+      <title>Athlitikos 106,7</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Star 95,7</title>
-    </track>
-    <track>
-      <location>http://907ioannina.live24.gr/907ioannina</location>
-      <title>Best 90,7</title>
-    </track>
-    <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Epirus 94,5</title>
+      <location>http://s3.onweb.gr:8454</location>
+      <title>Super FM 89,6</title>
     </track>
   </trackList>
 </playlist>

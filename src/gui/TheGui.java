@@ -3,10 +3,8 @@
  * and open the template in the editor.
  */
 package gui;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,6 +32,9 @@ public class TheGui extends javax.swing.JFrame {
      */
     public TheGui() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Eradioparser - create playlists");
+        JDialogClosed = false;
     }
 
     /**
@@ -59,18 +60,23 @@ public class TheGui extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Main Options");
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton1.setText("<html><b>Get</b> a playlist for all the stations at &lt;e-radio.gr&gt;.");
+        jRadioButton1.setText("<html><b>Get</b> a playlist for all the stations at <b>e-radio.gr</b>.</html>");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -82,7 +88,7 @@ public class TheGui extends javax.swing.JFrame {
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton4.setText("<html><b>View</b> the <b>station Ratings (Top)</b> and get a playlist.</html>");
+        jRadioButton4.setText("<html><b>View</b> the station<b> Locations & Categories</b> and create a custom playlist.</html>");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton4ActionPerformed(evt);
@@ -129,9 +135,6 @@ public class TheGui extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
-
         jMenu3.setText("About");
 
         jMenuItem2.setText("Info");
@@ -152,33 +155,32 @@ public class TheGui extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(455, Short.MAX_VALUE)
-                        .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
+                                .addGap(21, 21, 21)
                                 .addComponent(jLabel1))
+                            .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(260, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(208, 208, 208)
-                                .addComponent(jLabel3)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel2)
+                                .addGap(137, 137, 137)))
+                        .addComponent(jButton1)
+                        .addGap(17, 17, 17))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addComponent(jLabel3)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -189,7 +191,7 @@ public class TheGui extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)
-                        .addGap(18, 18, 18))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(13, 13, 13)
@@ -202,10 +204,10 @@ public class TheGui extends javax.swing.JFrame {
                         .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                         .addComponent(jLabel2)
-                        .addGap(6, 6, 6)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(3, 3, 3)))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -218,12 +220,11 @@ public class TheGui extends javax.swing.JFrame {
 
             DefaultCaller caller = new DefaultCaller();
             final String URL= "http://e-radio.gr";
-            Document doc = null;
-            doc = parseUrl(URL, 0);
+            Document doc = parseUrl(URL, 0);
             
             if(doc==null){
-                jTextArea1.append("No connection to the server! Exiting...");
-		System.exit(1);
+                JOptionPane.showMessageDialog(TheGui.this, "No connection to the server! Try again later! Exiting...", "No connection", JOptionPane.ERROR_MESSAGE);
+                System.exit(1);
             }
             
             Elements links = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
@@ -244,21 +245,17 @@ public class TheGui extends javax.swing.JFrame {
         public void run() {
             DefaultCaller caller = new DefaultCaller();
             final String URL= "http://e-radio.gr";
-            Document doc = null;
-            
-            doc = parseUrl(URL, 0);
-           
+            Document doc = parseUrl(URL, 0);
+                     
             //Get CATEGORIES
-            doc = parseUrl(URL, 0);
-		
             if(doc==null){
-                JOptionPane.showMessageDialog(TheGui.this, "No internet connection! Try again!", "No connection", JOptionPane.ERROR_MESSAGE);
-                //System.exit(1);
+                JOptionPane.showMessageDialog(TheGui.this, "No connection to the server! Try again later! Exiting...", "No connection", JOptionPane.ERROR_MESSAGE);
+                System.exit(1);
             }
 			
             Elements categoryLinks = doc.select("div[id=paneContainer]").select("a[href*=/categories/]");
             
-            ArrayList<String> categories = new ArrayList<String>();
+            ArrayList<String> categories = new ArrayList<>();
             
             for(int i=0; i< categoryLinks.size();i++)
                 categories.add(StringEscapeUtils.unescapeHtml4(categoryLinks.get(i).html()));
@@ -273,7 +270,7 @@ public class TheGui extends javax.swing.JFrame {
                 jRadioButton1.setEnabled(true);
                 jRadioButton2.setEnabled(true);
                 jRadioButton3.setEnabled(true);
-                jRadioButton4.setEnabled(false);
+                jRadioButton4.setEnabled(true);
                 jButton1.setEnabled(true);
              }
             else{
@@ -299,15 +296,17 @@ public class TheGui extends javax.swing.JFrame {
         public void run() {
             DefaultCaller caller = new DefaultCaller();
             final String URL= "http://e-radio.gr";
-            Document doc = null;
-            
-            doc = parseUrl(URL, 0);
-            if(doc==null)
-                JOptionPane.showMessageDialog(TheGui.this, "No internet connection! Try again!", "No connection", JOptionPane.ERROR_MESSAGE);
+            Document doc = parseUrl(URL, 0);
+            //GET locations
+            if(doc==null){
+                JOptionPane.showMessageDialog(TheGui.this, "No connection to the server! Try again later! Exiting...", "No connection", JOptionPane.ERROR_MESSAGE);
+                System.exit(1);
+            }
+
             
             Elements locationLinks = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
 	
-            ArrayList<String> locations = new ArrayList<String>();
+            ArrayList<String> locations = new ArrayList<>();
             
             for(int i=0; i< locationLinks.size();i++)
                 locations.add(StringEscapeUtils.unescapeHtml4(locationLinks.get(i).html()));
@@ -322,7 +321,7 @@ public class TheGui extends javax.swing.JFrame {
                 jRadioButton1.setEnabled(true);
                 jRadioButton2.setEnabled(true);
                 jRadioButton3.setEnabled(true);
-                jRadioButton4.setEnabled(false);
+                jRadioButton4.setEnabled(true);
                 jButton1.setEnabled(true);
              }
             else{
@@ -334,12 +333,74 @@ public class TheGui extends javax.swing.JFrame {
 		    			 StringEscapeUtils.unescapeHtml4(locationLinks.get(choice).html())+
 		    			 ">.");
                  Thread thr = new Thread(new CoreCode());
-                thr.start();
+                thr.start();                
             }
         }
     }
     
-        private class MenuOption4 implements Runnable{
+    
+    private class MenuOption4 implements Runnable{
+
+        @Override
+        public void run() {
+            DefaultCaller caller = new DefaultCaller();
+            final String URL= "http://e-radio.gr";
+            Document doc = parseUrl(URL, 0);
+            if(doc==null){
+                JOptionPane.showMessageDialog(TheGui.this, "No connection to the server! Try again later! Exiting...", "No connection", JOptionPane.ERROR_MESSAGE);
+                System.exit(1);
+            }
+            
+            //get the locations
+            Elements locationLinks = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
+            ArrayList<String> locations = new ArrayList<>();
+            
+            for(int i=0; i< locationLinks.size();i++)
+                locations.add(StringEscapeUtils.unescapeHtml4(locationLinks.get(i).html()));
+            
+            String[] theLocations = new String[locations.size()];
+            theLocations = locations.toArray(theLocations);
+            
+            //get the categories 
+            Elements categoryLinks = doc.select("div[id=paneContainer]").select("a[href*=/categories/]");
+            ArrayList<String> categories = new ArrayList<>();
+            
+            for(int i=0; i< categoryLinks.size();i++)
+                categories.add(StringEscapeUtils.unescapeHtml4(categoryLinks.get(i).html()));
+
+            
+            String[] theCategories = new String[categories.size()];
+            theCategories = categories.toArray(theCategories);
+
+            CustomDialog custom = new CustomDialog(TheGui.this, true, theLocations, theCategories, locationLinks, categoryLinks);
+            custom.setVisible(true);
+            
+            System.out.println("testing after second windos");
+
+            
+            if (JDialogClosed==true){
+                jRadioButton1.setEnabled(true);
+                jRadioButton2.setEnabled(true);
+                jRadioButton3.setEnabled(true);
+                jRadioButton4.setEnabled(true);
+                jButton1.setEnabled(true); 
+            }
+            else{
+                Thread thr = new Thread(new CoreCode());
+                thr.start();
+            }
+            
+
+            
+               
+
+   
+            
+        }
+    }
+            
+    
+      /*  private class MenuOption4 implements Runnable{
 
         @Override
         public void run() {
@@ -582,9 +643,9 @@ public class TheGui extends javax.swing.JFrame {
                      }
         }
             
-        }
+        }*/
     
-    private class CoreCode implements Runnable{
+    public class CoreCode implements Runnable{
 
         @Override
         public void run() {
@@ -649,6 +710,8 @@ public class TheGui extends javax.swing.JFrame {
             diskFiles.add(pl1.getTitlesFileNme());
             diskFiles.add(pl2.getEradioLinksFileName());
             diskFiles.add(pl2.getLinks2FileName());
+            File tmp = new File(pl1.getLinksFileName());
+            String thePath = tmp.getAbsolutePath();
             for(String name : diskFiles){
                 File a = new File(name);
                 a.delete();
@@ -665,8 +728,13 @@ public class TheGui extends javax.swing.JFrame {
 				"/"+
 				pl1.getStationLinks1().size());
             
-            JOptionPane.showMessageDialog(TheGui.this, "Playlist successfully generated!");   
-
+            JOptionPane.showMessageDialog(TheGui.this, "Playlist successfully generated to: " 
+                    + newline 
+                    + newline
+                    + thePath 
+                    + newline
+                    + "Exiting...");   
+            System.exit(1);
     }
         
     }
@@ -705,15 +773,14 @@ public class TheGui extends javax.swing.JFrame {
             
         }
         else if(jRadioButton4.isSelected()){
-            Thread t = new Thread(new MenuOption4());
-            t.start();
-
             jRadioButton1.setEnabled(false);
             jRadioButton2.setEnabled(false);
             jRadioButton3.setEnabled(false);
             jRadioButton4.setEnabled(false);
             jButton1.setEnabled(false);   
             
+            Thread t = new Thread(new MenuOption4());
+            t.start();            
         }
         else{
             JOptionPane.showMessageDialog(this, "You need to make a choice!");
@@ -728,12 +795,16 @@ public class TheGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        JOptionPane.showMessageDialog(this, "Program created by Dio!\nUnder GPL v3.0 license");
+        JOptionPane.showMessageDialog(this, "Program created by: Lappas Dionysis (Dio)     \n\nUnder GPL v3.0 license");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     public javax.swing.JTextArea getTextArea1(){
         return jTextArea1;
@@ -780,6 +851,7 @@ public class TheGui extends javax.swing.JFrame {
             }
         });
     }
+    public static boolean JDialogClosed;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
@@ -787,7 +859,6 @@ public class TheGui extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
