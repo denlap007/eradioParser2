@@ -1,0 +1,9 @@
+                                                attrOfSrc = src.attr("abs:flashvars");
+                                                        int start = attrOfSrc.indexOf("http://", attrOfSrc.indexOf("http://") + 1);
+                                                        int end = attrOfSrc.indexOf(";");   
+                                                        
+                                                        String subString = attrOfSrc.substring(start, end);                                                        
+                                                        
+			        			subString = subString.replace(" ", "%");
+			        			stationLinks1.add(subString);
+								break;//link found no need to check another src on this url

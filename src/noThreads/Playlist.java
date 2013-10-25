@@ -24,29 +24,22 @@
  */
 package noThreads;
 
-import static noThreads.DefaultCaller.*;
-
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import com.melloware.jspiff.jaxp.XspfPlaylist;
+import com.melloware.jspiff.jaxp.XspfPlaylistTrackList;
+import com.melloware.jspiff.jaxp.XspfTrack;
+import java.io.*;
 import java.util.ArrayList;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.parsers.ParserConfigurationException;
-
+import static noThreads.DefaultCaller.eradioLinks;
+import static noThreads.DefaultCaller.writeToFile;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 import org.xml.sax.SAXException;
-
-import com.melloware.jspiff.jaxp.XspfPlaylist;
-import com.melloware.jspiff.jaxp.XspfPlaylistTrackList;
-import com.melloware.jspiff.jaxp.XspfTrack;
 
 
 public class Playlist {
@@ -61,7 +54,7 @@ public class Playlist {
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
 
         //Read File Line By Line
-        ArrayList<String> links = new ArrayList<String>();
+        ArrayList<String> links = new ArrayList<>();
         while ((inputLine = br.readLine())!= null){
         			links.add(inputLine);
         }
@@ -81,7 +74,7 @@ public class Playlist {
 	 }
 	 
 	 public void createPlaylist() throws IOException, DocumentException, SAXException, ParserConfigurationException{
-		 String xmlObject = null, title = null;
+		 String xmlObject, title = null;
 		 boolean flag = true;
 		 XspfPlaylist playlist = new XspfPlaylist();
 		 playlist.setTitle("My Playlist");
@@ -117,5 +110,26 @@ public class Playlist {
 		 writer.write(doc);
 		 writer.close();
 	 }
-}
+         
+         public void createM3uPlaylist(){
+             try {
+                 boolean flag=true;
+                 writeToFile("playlist.m3u", "#EXTM3U:\n");
+                 //writeToFile("playlist.m3u8", "\n");
+                 for(int i=0; i<eradioLinks.size();i++){
+                     if (flag==true){
+                         flag=false;
+                         String theStation = "#EXTINF: "+eradioLinks.get(i);
+                         writeToFile("playlist.m3u", theStation);
+                     }
+                     else{
+                         flag=true;
+                         writeToFile("playlist.m3u", eradioLinks.get(i));
+                     }
+                 }
+             } catch (IOException ex) {
+                 Logger.getLogger(Playlist.class.getName()).log(Level.SEVERE, null, ex);
+             }
+         }
+}//end of Class
 

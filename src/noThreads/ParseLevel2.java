@@ -38,11 +38,11 @@ import org.jsoup.select.Elements;
 
 
 public class ParseLevel2 {
-	private ArrayList<String> stationLinks2 = new ArrayList<String>();
-	private ArrayList<String> eradio_BAD_Links = new ArrayList<String>();
-	private String links2FileName= new String("theLinks_2.txt");
-	private String eradioLinksFileName = new String("eradio_links.txt");
-	private String eradioBadLinksFileName = new String("eradio_BAD_links.txt");
+	private ArrayList<String> stationLinks2 = new ArrayList<>();
+	private ArrayList<String> eradio_BAD_Links = new ArrayList<>();
+	private String links2FileName= "theLinks_2.txt";
+	private String eradioLinksFileName = "eradio_links.txt";
+	private String eradioBadLinksFileName = "eradio_BAD_links.txt";
 
 
 	/**
@@ -51,25 +51,51 @@ public class ParseLevel2 {
 	 * @throws IOException
 	 */
     public void getSecondLinks(ArrayList<String> theLinks) throws IOException {
-    	String temp=null;
-    	Document doc=null;
+    	String temp, attrOfScr, subString;
+    	Document doc;
     	boolean flag;
     	for(String sLink : theLinks) {
-    		if(sLink.endsWith(".asx")==true || sLink.endsWith(".swf")==true){
+    		if((sLink.endsWith(".asx")==true) || (sLink.endsWith(".swf")==true)){
     			stationLinks2.add(sLink);
     			print("Written to file: %s", sLink);
     		}else{
+                    //iframeCase(sLink);
+                    
     			doc = parseUrl(sLink, 0);
     			if (doc!=null){
     				Elements media = doc.select("[src]");
     				print("Fetching %s -->  ", sLink);
-
     				flag=false;
     				for (Element src : media){
     					if (src.tagName().equals("embed")==true){
     						flag=true;
     						temp =src.attr("abs:src");
-    						stationLinks2.add(temp);
+                                                if(temp.endsWith(".swf")==true){
+                                                    attrOfScr = src.attr("abs:flashvars");
+//                                                    System.out.println("\nThis is src of embed tag: "
+//                                                            +temp
+//                                                            +"\nThis is attribute flashvars of embed tag: "
+//                                                            +attrOfScr);
+                                                    int start = attrOfScr.indexOf("http://", attrOfScr.indexOf("http://") + 1);
+                                                    int end = attrOfScr.indexOf("&");
+                                                    char a_char = attrOfScr.charAt(end-1);
+                                                    
+                                                    if (start!=-1 && end!=-1){
+                                                        if(a_char == ';')
+                                                            subString = attrOfScr.substring(start, end-1);
+                                                        else
+                                                            subString = attrOfScr.substring(start, end);
+                                                        
+                                                        //System.out.println("\nthis is the result subString: "+subString);
+                                                        stationLinks2.add(subString);
+                                                    }
+                                                    else{
+                                                        //something's wrong, do not process the link
+                                                        flag=false;
+                                                    }
+                                                    break;//link found                                                    
+                                                }
+                                                stationLinks2.add(temp);
     						break;//link found, load next url
     					}
     				}//end nested for
@@ -77,11 +103,12 @@ public class ParseLevel2 {
     					stationLinks2.add(sLink);
     				}
     			}
-    		}	
+    		}  
     	}//end outer for
     	writeLinksToFile(links2FileName, stationLinks2);
     	print("Written %s to file, second links.", stationLinks2.size());
     }//end method
+    
     
     /**
      * 
@@ -92,8 +119,8 @@ public class ParseLevel2 {
     public void getFinalLinks(ArrayList<String> theLinksFinal, ArrayList<String> theTitles) throws IOException {
     	String title, sLink, inputLine, link;
     	int start, end;
-    	boolean threw = false;
-    	URL address = null;
+    	boolean threw;
+    	URL address;
     	BufferedReader in = null;
     	
     	for(int i=0; i<theLinksFinal.size(); i++) {
@@ -112,9 +139,7 @@ public class ParseLevel2 {
 					print("INVALID LINK --> %s. Event Handled", sLink);
 					threw=true;
 					}
-    			if (threw==false) {
-               		start=0;
-            		end=0;  
+    			if (threw==false) { 
             		while ((inputLine = in.readLine()) != null) { 
                 		start = inputLine.indexOf("http");
             			end = inputLine.lastIndexOf('\"');   
@@ -151,6 +176,7 @@ public class ParseLevel2 {
     	writeLinksToFile(eradioLinksFileName, eradioLinks);
     	writeLinksToFile(eradioBadLinksFileName, eradio_BAD_Links);
     }
+    
     
     /**
      * 
@@ -192,6 +218,7 @@ public class ParseLevel2 {
 			return ERROR_CODE;	//error, return a large int that isn't included in any http status code		
 		}
     }
+    
     
     /**
      * @param theUrl
@@ -271,6 +298,7 @@ public class ParseLevel2 {
     		return false;    		
     	}
     }
+    
     /**
      * Setters and Getters
      */
@@ -313,6 +341,4 @@ public class ParseLevel2 {
 	public void setEradioBadLinksFileName(String eradioBadLinksFileName) {
 		this.eradioBadLinksFileName = eradioBadLinksFileName;
 	}
-    
-    
-}
+}//end of Class

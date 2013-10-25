@@ -46,6 +46,7 @@ import org.xml.sax.SAXException;
  */
 public class TheGui extends javax.swing.JFrame {
     public static  final String newline = "\n";
+    private boolean playlistType =false; //default for xspff, true fro m3u
 
     /**
      * Creates new form TheGui
@@ -67,6 +68,7 @@ public class TheGui extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
@@ -80,6 +82,9 @@ public class TheGui extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -131,7 +136,12 @@ public class TheGui extends javax.swing.JFrame {
         jLabel2.setText("Program run messages");
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\GUI\\src\\gui\\runIcon.jpg")); // NOI18N
         jButton1.setText("Run");
+        jButton1.setIconTextGap(10);
+        jButton1.setMaximumSize(new java.awt.Dimension(65, 30));
+        jButton1.setMinimumSize(new java.awt.Dimension(65, 30));
+        jButton1.setPreferredSize(new java.awt.Dimension(65, 30));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -145,6 +155,7 @@ public class TheGui extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/exitIcon.png"))); // NOI18N
         jMenuItem1.setText("Exit");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,8 +166,37 @@ public class TheGui extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setText("Options");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup2.add(jRadioButtonMenuItem1);
+        jRadioButtonMenuItem1.setText("Create .m3u playlist");
+        jRadioButtonMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jRadioButtonMenuItem1);
+
+        buttonGroup2.add(jRadioButtonMenuItem2);
+        jRadioButtonMenuItem2.setSelected(true);
+        jRadioButtonMenuItem2.setText("Create .xspf playlist");
+        jRadioButtonMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jRadioButtonMenuItem2);
+
+        jMenuBar1.add(jMenu2);
+
         jMenu3.setText("About");
 
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/InfoIcon.png"))); // NOI18N
         jMenuItem2.setText("Info");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,32 +215,26 @@ public class TheGui extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(21, 21, 21)
                                 .addComponent(jLabel1))
-                            .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(260, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGap(0, 219, Short.MAX_VALUE)
                                 .addComponent(jLabel2)
-                                .addGap(137, 137, 137)))
-                        .addComponent(jButton1)
-                        .addGap(17, 17, 17))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(216, 216, 216)
-                .addComponent(jLabel3)
+                                .addGap(104, 104, 104)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(216, 216, 216)
+                        .addComponent(jLabel3)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -208,10 +242,6 @@ public class TheGui extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(13, 13, 13)
@@ -226,7 +256,11 @@ public class TheGui extends javax.swing.JFrame {
                         .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                         .addComponent(jLabel2)
-                        .addGap(3, 3, 3)))
+                        .addGap(3, 3, 3))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -258,6 +292,7 @@ public class TheGui extends javax.swing.JFrame {
             thr.start();
         }
         }
+        
         
     private class MenuOption2 implements Runnable{
 
@@ -401,6 +436,7 @@ public class TheGui extends javax.swing.JFrame {
                 jRadioButton3.setEnabled(true);
                 jRadioButton4.setEnabled(true);
                 jButton1.setEnabled(true); 
+                jMenu2.setEnabled(true);
             }
             else{
                 Thread thr = new Thread(new CoreCode());
@@ -408,16 +444,29 @@ public class TheGui extends javax.swing.JFrame {
             }   
         }
     }
+    
+    private class MenuOption5 implements Runnable{
+
+        @Override
+        public void run() {
+
+        }
+        
+    }
       
     
     public class CoreCode implements Runnable{
 
         @Override
         public void run() {
-            coreActions();
+            try {
+                coreActions();
+            } catch (IOException ex) {
+                Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
-            private void coreActions(){
+            private void coreActions() throws IOException{
             ArrayList<String> diskFiles = new ArrayList<>();    
             //variables that hold time in msec, in order to calculate
             //how much time lasts a program execution
@@ -437,12 +486,10 @@ public class TheGui extends javax.swing.JFrame {
             */
 		
             ParseLevel1 pl1 = new ParseLevel1();
-            try {
+
                 pl1.getFirstLinks(pl0.getCodes());
                 pl1.getStationTitles();
-            } catch (IOException ex) {
-                Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
-            }
+
             
 		
             ParseLevel2 pl2 = new ParseLevel2();
@@ -455,11 +502,17 @@ public class TheGui extends javax.swing.JFrame {
             
 		
             Playlist p = new Playlist();
-            try {
-                p.createPlaylist();
-            } catch (    IOException | DocumentException | SAXException | ParserConfigurationException ex) {
-                Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
+            if (playlistType==true){
+                p.createM3uPlaylist();
             }
+            else{
+                try {
+                    p.createPlaylist();
+                } catch (    IOException | DocumentException | SAXException | ParserConfigurationException ex) {
+                    Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
 		
             endTime = System.currentTimeMillis();
             total_time = total_time + (endTime-startTime);
@@ -474,8 +527,11 @@ public class TheGui extends javax.swing.JFrame {
                 File a = new File(name);
                 a.delete();
             }
-            
-            File tmp = new File("playlist.xspf");
+            File tmp;
+            if(playlistType==true)
+                tmp = new File("playlist.m3u");
+            else
+                tmp = new File("playlist.xspf");
             String thePath = tmp.getAbsolutePath();
 		
             jTextArea1.append("\n\nRUN SUMMARY:\n" +
@@ -494,7 +550,14 @@ public class TheGui extends javax.swing.JFrame {
                     + newline
                     + thePath 
                     + newline
-                    + newline
+                    +"Parsed: "
+                    +pl1.getStationLinks1().size()
+                    +" station links. \n"
+                    +"Valid links: " 
+                    +DefaultCaller.eradioLinks.size()/2
+                    +"/"
+                    +pl1.getStationLinks1().size()
+                    +".\n"
                     + "The program will now exit...");   
             System.exit(1);
     }
@@ -503,7 +566,9 @@ public class TheGui extends javax.swing.JFrame {
 
         
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-          if(jRadioButton1.isSelected()){
+        jMenu2.setEnabled(false);
+        
+        if(jRadioButton1.isSelected()){
              Thread t = new Thread(new MenuOption1());
              t.start();      
            
@@ -545,6 +610,7 @@ public class TheGui extends javax.swing.JFrame {
             t.start();            
         }
         else{
+            jMenu2.setEnabled(true);
             JOptionPane.showMessageDialog(this, "You need to make a choice!");
         }
         
@@ -571,6 +637,18 @@ public class TheGui extends javax.swing.JFrame {
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jRadioButtonMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem1ActionPerformed
+        playlistType = true;
+    }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
+
+    private void jRadioButtonMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem2ActionPerformed
+        playlistType = false;
+    }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu2ActionPerformed
 
     public javax.swing.JTextArea getTextArea1(){
         return jTextArea1;
@@ -620,11 +698,13 @@ public class TheGui extends javax.swing.JFrame {
     public static boolean JDialogClosed;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
@@ -633,6 +713,8 @@ public class TheGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
     public static javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables

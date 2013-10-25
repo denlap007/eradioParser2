@@ -34,10 +34,10 @@ import org.jsoup.select.Elements;
 public class ParseLevel1 {
 	private ArrayList<String> stationLinks1 = new ArrayList<>();
 	private ArrayList<String> unProsessedLinks = new ArrayList<>();
-	private ArrayList<String> titles = new ArrayList<String>();
-	private String linksFileName = new String("theLinks_1.txt");
-	private String unProcLinksFileName = new String("Unprocessed_links_probably_BAD.txt");
-	private String titlesFileNme = new String("titles.txt");
+	private ArrayList<String> titles = new ArrayList<>();
+	private String linksFileName = "theLinks_1.txt";
+	private String unProcLinksFileName = "Unprocessed_links_probably_BAD.txt";
+	private String titlesFileNme = "titles.txt";
 
 	
 	/**
@@ -46,8 +46,8 @@ public class ParseLevel1 {
 	 * @throws IOException
 	 */
 	 public void getFirstLinks(ArrayList<Integer> theCodes) throws IOException{
-		 boolean linkFound =false;
-	        String temp = null;
+		boolean linkFound;
+	        String temp;
 	    	String theUrl = "http://e-radio.gr/player/player.asp?sID=";
 	    	Document doc;
 
@@ -66,8 +66,8 @@ public class ParseLevel1 {
 			        		if(temp.contains("playerX")==true){	
 			        			linkFound=true;
 			        			temp = temp.replace(" ", "%");
-			        			stationLinks1.add(temp);
-								break;//link found no need to check another src on this url
+                                                        stationLinks1.add(temp);
+                                                        break;//link found no need to check another src on this url
 			        		}
 			        	}else if (src.tagName().equals("embed")==true){
 			        		linkFound=true;
@@ -94,15 +94,14 @@ public class ParseLevel1 {
 			writeLinksToFile(linksFileName, stationLinks1);
 			writeLinksToFile(unProcLinksFileName, unProsessedLinks);
 	 }//end method 	
-	 
+ 
 
 	 /**
 	  * 
 	  * @throws IOException
 	  */
 	 public void getStationTitles() throws IOException{
-		 int start=0;
-		 int end=0;
+		 int start, end;
 		 String title;
 		 
 		 for(String stationLink : stationLinks1){
@@ -192,10 +191,4 @@ public class ParseLevel1 {
 	public void setTitlesFileNme(String titlesFileNme) {
 		this.titlesFileNme = titlesFileNme;
 	}
-
-
-
-	
-	 
-	 
 }//end of Class

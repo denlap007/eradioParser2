@@ -4,11 +4,11 @@
   <title>My Playlist</title>
   <trackList>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://s1.onweb.gr:8408/</location>
       <title>Studio 3 103,5</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://eco.onestreaming.com:8366/</location>
       <title>Kritiko Diadiktyako Radiofono</title>
     </track>
     <track>
@@ -24,51 +24,39 @@
       <title>Internet Radio Koziani</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Faros 92,7</title>
-    </track>
-    <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://eco.onestreaming.com:8219/stream</location>
       <title>e-Pontos</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://s3.onweb.gr:8522/</location>
       <title>Creta Planet</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://stream2.proradio.gr:8004/erotokritos</location>
       <title>Erotokritos Fm 87,9</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://goodradio.gr:9112/</location>
       <title>Mousiko Kanali 101,3</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Paradosiako Thessalias</title>
-    </track>
-    <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://s4.onweb.gr:8826/</location>
       <title>Paradosiakos 106,6</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://stream.all-host.gr:9034/</location>
       <title>Radio Megalonisos 89,8</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://radio.radionova.gr:8000/kritorama</location>
       <title>Kritorama FM 97,9</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://174.36.237.66:9450/</location>
       <title>Radio Epirus 94,5</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
-      <title>Radio Nostalgia</title>
-    </track>
-    <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://s1.onweb.gr:8040/</location>
       <title>Radio Rizites 92,4</title>
     </track>
     <track>
@@ -76,7 +64,7 @@
       <title>Amore Fm 107,9</title>
     </track>
     <track>
-      <location>http://www.e-radio.gr/player/ffmp3-config.swf</location>
+      <location>http://s1.onweb.gr:8852/</location>
       <title>Kritikos 88,7</title>
     </track>
   </trackList>

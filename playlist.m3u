@@ -1,0 +1,68 @@
+#EXTM3U:
+
+#EXTINF: ,Studio 3 103,5
+http://s1.onweb.gr:8408/
+#EXTINF: ,Kritiko Diadiktyako Radiofono
+http://eco.onestreaming.com:8366/
+#EXTINF: ,Elliniko Paradosiako
+http://live.onestreaming.com/elpar
+#EXTINF: ,Antonis Radio
+http://live.onestreaming.com/antonisradio
+#EXTINF: ,Internet Radio Koziani
+http://live.onestreaming.com/koziani
+#EXTINF: ,e-Pontos
+http://eco.onestreaming.com:8219/stream
+#EXTINF: ,Creta Planet
+http://s3.onweb.gr:8522/
+#EXTINF: ,Erotokritos Fm 87,9
+http://stream2.proradio.gr:8004/erotokritos
+#EXTINF: ,Mousiko Kanali 101,3
+http://goodradio.gr:9112/
+#EXTINF: ,Paradosiakos 106,6
+http://s4.onweb.gr:8826/
+#EXTINF: ,Radio Megalonisos 89,8
+http://stream.all-host.gr:9034/
+#EXTINF: ,Kritorama FM 97,9
+http://radio.radionova.gr:8000/kritorama
+#EXTINF: ,Radio Epirus 94,5
+http://174.36.237.66:9450/
+#EXTINF: ,Radio Rizites 92,4
+http://s1.onweb.gr:8040/
+#EXTINF: ,Amore Fm 107,9
+http://m2.onweb.gr/amorefm
+#EXTINF: ,Kritikos 88,7
+http://s1.onweb.gr:8852/
+#EXTM3U:
+
+#EXTINF:0,Studio 3 103,5
+http://s1.onweb.gr:8408/
+#EXTINF:0,Kritiko Diadiktyako Radiofono
+http://eco.onestreaming.com:8366/
+#EXTINF:0,Elliniko Paradosiako
+http://live.onestreaming.com/elpar
+#EXTINF:0,Antonis Radio
+http://live.onestreaming.com/antonisradio
+#EXTINF:0,Internet Radio Koziani
+http://live.onestreaming.com/koziani
+#EXTINF:0,e-Pontos
+http://eco.onestreaming.com:8219/stream
+#EXTINF:0,Creta Planet
+http://s3.onweb.gr:8522/
+#EXTINF:0,Erotokritos Fm 87,9
+http://stream2.proradio.gr:8004/erotokritos
+#EXTINF:0,Mousiko Kanali 101,3
+http://goodradio.gr:9112/
+#EXTINF:0,Paradosiakos 106,6
+http://s4.onweb.gr:8826/
+#EXTINF:0,Radio Megalonisos 89,8
+http://stream.all-host.gr:9034/
+#EXTINF:0,Kritorama FM 97,9
+http://radio.radionova.gr:8000/kritorama
+#EXTINF:0,Radio Epirus 94,5
+http://174.36.237.66:9450/
+#EXTINF:0,Radio Rizites 92,4
+http://s1.onweb.gr:8040/
+#EXTINF:0,Amore Fm 107,9
+http://m2.onweb.gr/amorefm
+#EXTINF:0,Kritikos 88,7
+http://s1.onweb.gr:8852/

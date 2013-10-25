@@ -1,0 +1,358 @@
+category choice and input10 Ñïê
+...Processing category <Ñïê>.
+code: 2124
+code: 1707
+code: 96
+code: 2134
+code: 743
+code: 1910
+code: 757
+code: 752
+code: 1132
+code: 92
+code: 136
+code: 116
+code: 101
+code: 2035
+code: 1968
+code: 857
+code: 2103
+code: 1804
+code: 138
+code: 1012
+code: 927
+code: 1954
+code: 1881
+code: 1104
+code: 19
+code: 1983
+code: 862
+code: 1855
+code: 1165
+code: 1948
+code: 52
+code: 2113
+code: 1916
+code: 1986
+code: 1205
+code: 31
+code: 1957
+code: 395
+code: 1763
+code: 1223
+code: 2020
+code: 675
+code: 683
+code: 73
+
+Number of Codes: 44
+Fetching http://e-radio.gr/player/player.asp?sID=2124 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1707 -->  
+Unprocessed, no iframe - embed tag for url: http://e-radio.gr/player/player.asp?sID=1707
+Fetching http://e-radio.gr/player/player.asp?sID=96 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=2134 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=743 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1910 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=757 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=752 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1132 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=92 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=136 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=116 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=101 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=2035 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1968 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=857 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=2103 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1804 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=138 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1012 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=927 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1954 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1881 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1104 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=19 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1983 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=862 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1855 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1165 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1948 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=52 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=2113 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1916 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1986 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1205 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=31 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1957 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=395 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1763 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=1223 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=2020 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=675 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=683 -->  
+Fetching http://e-radio.gr/player/player.asp?sID=73 -->  
+Unprosessed Links: 1
+Processed Links: 43
+Station Title: Legend 101,6
+Station Title: Rock Fm 96,9
+Station Title: Kick Radio
+Station Title: IEK Delta Radio - Alternative
+Station Title: Mini FM 107,1
+Station Title: AM Je t'aime 93,4
+Station Title: Studio E 103
+Station Title: Energy 101
+Station Title: Rainbow 89
+Station Title: Rock Radio 104,7
+Station Title: 1055 Rock 105,5
+Station Title: Radio Gold
+Station Title: Crash Radio
+Station Title: Depressive Metal Rock Radio
+Station Title: Driver FM
+Station Title: Enter FM
+Station Title: Midnight Events Radio
+Station Title: Noise Fm 100,5
+Station Title: Octava Radio
+Station Title: Psycho Radio
+Station Title: Radio Cancelled
+Station Title: Rock Velvet
+Station Title: Rockarolla Radio
+Station Title: Studio Fm1 105,4
+Station Title: Troll Radio
+Station Title: Wasteland
+Station Title: Zbutsam
+Station Title: Wave 97,4
+Station Title: Radio Patata
+Station Title: 1431 AM 1431
+Station Title: e-Rock Radio
+Station Title: Midnight Radio
+Station Title: Perfect Radio 103,3
+Station Title: Radio Spirit
+Station Title: Rockharadio
+Station Title: Skordo Radio
+Station Title: Atlantis 105,2
+Station Title: Gaga Radio
+Station Title: Lizard Radio
+Station Title: Mousikes Ebeeries
+Station Title: Music Heaven
+Station Title: Rock Machine
+Station Title: Metal Zone
+Size of Links: 43
+Size of Titles: 43
+http://www.e-radio.gr/player/playerX.asp?sID=2124&cn=legend1016&stitle=Legend 101,6&codecID=3&pt=2&weblink=s6%2Eonweb%2Egr%3A8002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2124&cn=legend1016&stitle=Legend 101,6&codecID=3&pt=2&weblink=s6%2Eonweb%2Egr%3A8002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2124&cn=legend1016&stitle=Legend 101,6&codecID=3&pt=2&weblink=s6%2Eonweb%2Egr%3A8002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2124&cn=legend1016&stitle=Legend 101,6&codecID=3&pt=2&weblink=s6%2Eonweb%2Egr%3A8002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2124&cn=legend1016&stitle=Legend 101,6&codecID=3&pt=2&weblink=s6%2Eonweb%2Egr%3A8002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=96&cn=rockfm&stitle=Rock Fm 96,9&codecID=3&pt=2&weblink=91%2E132%2E6%2E21%3A8003  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=96&cn=rockfm&stitle=Rock Fm 96,9&codecID=3&pt=2&weblink=91%2E132%2E6%2E21%3A8003  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=96&cn=rockfm&stitle=Rock Fm 96,9&codecID=3&pt=2&weblink=91%2E132%2E6%2E21%3A8003  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=96&cn=rockfm&stitle=Rock Fm 96,9&codecID=3&pt=2&weblink=91%2E132%2E6%2E21%3A8003  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=96&cn=rockfm&stitle=Rock Fm 96,9&codecID=3&pt=2&weblink=91%2E132%2E6%2E21%3A8003  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2134&cn=kick&stitle=Kick Radio&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8464  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2134&cn=kick&stitle=Kick Radio&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8464  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2134&cn=kick&stitle=Kick Radio&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8464  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2134&cn=kick&stitle=Kick Radio&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8464  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2134&cn=kick&stitle=Kick Radio&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8464  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=743&cn=deltaradioalter&stitle=IEK Delta Radio - Alternative&codecID=2&pt=1&weblink=eco%2Eonestreaming%2Ecom%3A8404  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=743&cn=deltaradioalter&stitle=IEK Delta Radio - Alternative&codecID=2&pt=1&weblink=eco%2Eonestreaming%2Ecom%3A8404  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=743&cn=deltaradioalter&stitle=IEK Delta Radio - Alternative&codecID=2&pt=1&weblink=eco%2Eonestreaming%2Ecom%3A8404  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=743&cn=deltaradioalter&stitle=IEK Delta Radio - Alternative&codecID=2&pt=1&weblink=eco%2Eonestreaming%2Ecom%3A8404  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=743&cn=deltaradioalter&stitle=IEK Delta Radio - Alternative&codecID=2&pt=1&weblink=eco%2Eonestreaming%2Ecom%3A8404  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1910&cn=mini1071&stitle=Mini FM 107,1&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8142  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1910&cn=mini1071&stitle=Mini FM 107,1&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8142  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1910&cn=mini1071&stitle=Mini FM 107,1&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8142  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1910&cn=mini1071&stitle=Mini FM 107,1&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8142  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1910&cn=mini1071&stitle=Mini FM 107,1&codecID=3&pt=2&weblink=eco%2Eonestreaming%2Ecom%3A8142  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=757&cn=jetaime&stitle=AM Je t'aime 93,4&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fjetaime  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=757&cn=jetaime&stitle=AM Je t'aime 93,4&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fjetaime  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=757&cn=jetaime&stitle=AM Je t'aime 93,4&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fjetaime  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=757&cn=jetaime&stitle=AM Je t'aime 93,4&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fjetaime  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=757&cn=jetaime&stitle=AM Je t'aime 93,4&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fjetaime  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=752&cn=studioe&stitle=Studio E 103&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fstudioe  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=752&cn=studioe&stitle=Studio E 103&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fstudioe  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=752&cn=studioe&stitle=Studio E 103&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fstudioe  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=752&cn=studioe&stitle=Studio E 103&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fstudioe  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=752&cn=studioe&stitle=Studio E 103&codecID=2&pt=1&weblink=live%2Eonestreaming%2Ecom%2Fstudioe  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1132&cn=energykast&stitle=Energy 101&codecID=3&pt=2&weblink=www%2Eelgr%2Einfo%3A8112  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1132&cn=energykast&stitle=Energy 101&codecID=3&pt=2&weblink=www%2Eelgr%2Einfo%3A8112  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1132&cn=energykast&stitle=Energy 101&codecID=3&pt=2&weblink=www%2Eelgr%2Einfo%3A8112  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1132&cn=energykast&stitle=Energy 101&codecID=3&pt=2&weblink=www%2Eelgr%2Einfo%3A8112  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1132&cn=energykast&stitle=Energy 101&codecID=3&pt=2&weblink=www%2Eelgr%2Einfo%3A8112  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=92&cn=rainbow89&stitle=Rainbow 89&codecID=3&pt=2&weblink=stream%2Egreekradios%2Egr%3A4000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=92&cn=rainbow89&stitle=Rainbow 89&codecID=3&pt=2&weblink=stream%2Egreekradios%2Egr%3A4000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=92&cn=rainbow89&stitle=Rainbow 89&codecID=3&pt=2&weblink=stream%2Egreekradios%2Egr%3A4000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=92&cn=rainbow89&stitle=Rainbow 89&codecID=3&pt=2&weblink=stream%2Egreekradios%2Egr%3A4000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=92&cn=rainbow89&stitle=Rainbow 89&codecID=3&pt=2&weblink=stream%2Egreekradios%2Egr%3A4000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=136&cn=rockradio&stitle=Rock Radio 104,7&codecID=3&pt=2&weblink=rockradio%2Egr%3A1111  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=136&cn=rockradio&stitle=Rock Radio 104,7&codecID=3&pt=2&weblink=rockradio%2Egr%3A1111  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=136&cn=rockradio&stitle=Rock Radio 104,7&codecID=3&pt=2&weblink=rockradio%2Egr%3A1111  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=136&cn=rockradio&stitle=Rock Radio 104,7&codecID=3&pt=2&weblink=rockradio%2Egr%3A1111  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=136&cn=rockradio&stitle=Rock Radio 104,7&codecID=3&pt=2&weblink=rockradio%2Egr%3A1111  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=116&cn=rock1055&stitle=1055 Rock 105,5&codecID=2&pt=1&weblink=m1%2Eonweb%2Egr%2F1055rock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=116&cn=rock1055&stitle=1055 Rock 105,5&codecID=2&pt=1&weblink=m1%2Eonweb%2Egr%2F1055rock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=116&cn=rock1055&stitle=1055 Rock 105,5&codecID=2&pt=1&weblink=m1%2Eonweb%2Egr%2F1055rock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=116&cn=rock1055&stitle=1055 Rock 105,5&codecID=2&pt=1&weblink=m1%2Eonweb%2Egr%2F1055rock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=116&cn=rock1055&stitle=1055 Rock 105,5&codecID=2&pt=1&weblink=m1%2Eonweb%2Egr%2F1055rock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=101&cn=radiogold&stitle=Radio Gold&codecID=2&pt=1&weblink=radiogold%2Elive24%2Egr%2Fradiogold  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=101&cn=radiogold&stitle=Radio Gold&codecID=2&pt=1&weblink=radiogold%2Elive24%2Egr%2Fradiogold  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=101&cn=radiogold&stitle=Radio Gold&codecID=2&pt=1&weblink=radiogold%2Elive24%2Egr%2Fradiogold  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=101&cn=radiogold&stitle=Radio Gold&codecID=2&pt=1&weblink=radiogold%2Elive24%2Egr%2Fradiogold  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=101&cn=radiogold&stitle=Radio Gold&codecID=2&pt=1&weblink=radiogold%2Elive24%2Egr%2Fradiogold  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2035&cn=crashradiogr&stitle=Crash Radio&codecID=3&pt=2&weblink=uk4%2Dvn%2Emixstream%2Enet%3A8012  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2035&cn=crashradiogr&stitle=Crash Radio&codecID=3&pt=2&weblink=uk4%2Dvn%2Emixstream%2Enet%3A8012  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2035&cn=crashradiogr&stitle=Crash Radio&codecID=3&pt=2&weblink=uk4%2Dvn%2Emixstream%2Enet%3A8012  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2035&cn=crashradiogr&stitle=Crash Radio&codecID=3&pt=2&weblink=uk4%2Dvn%2Emixstream%2Enet%3A8012  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2035&cn=crashradiogr&stitle=Crash Radio&codecID=3&pt=2&weblink=uk4%2Dvn%2Emixstream%2Enet%3A8012  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1968&cn=dmrr&stitle=Depressive Metal Rock Radio&codecID=3&pt=2&weblink=184%2E154%2E10%2E83%3A8390  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1968&cn=dmrr&stitle=Depressive Metal Rock Radio&codecID=3&pt=2&weblink=184%2E154%2E10%2E83%3A8390  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1968&cn=dmrr&stitle=Depressive Metal Rock Radio&codecID=3&pt=2&weblink=184%2E154%2E10%2E83%3A8390  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1968&cn=dmrr&stitle=Depressive Metal Rock Radio&codecID=3&pt=2&weblink=184%2E154%2E10%2E83%3A8390  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1968&cn=dmrr&stitle=Depressive Metal Rock Radio&codecID=3&pt=2&weblink=184%2E154%2E10%2E83%3A8390  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=857&cn=radiodriver&stitle=Driver FM&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A9135  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=857&cn=radiodriver&stitle=Driver FM&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A9135  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=857&cn=radiodriver&stitle=Driver FM&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A9135  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=857&cn=radiodriver&stitle=Driver FM&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A9135  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=857&cn=radiodriver&stitle=Driver FM&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A9135  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2103&cn=enterfm&stitle=Enter FM&codecID=3&pt=2&weblink=83%2E169%2E20%2E189%3A8008  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2103&cn=enterfm&stitle=Enter FM&codecID=3&pt=2&weblink=83%2E169%2E20%2E189%3A8008  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2103&cn=enterfm&stitle=Enter FM&codecID=3&pt=2&weblink=83%2E169%2E20%2E189%3A8008  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2103&cn=enterfm&stitle=Enter FM&codecID=3&pt=2&weblink=83%2E169%2E20%2E189%3A8008  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2103&cn=enterfm&stitle=Enter FM&codecID=3&pt=2&weblink=83%2E169%2E20%2E189%3A8008  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1804&cn=midnightevents&stitle=Midnight Events Radio&codecID=3&pt=2&weblink=listen%2Eradionomy%2Ecom%2Fmidnight%2Devents%2Dradio%2Em3u  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1804&cn=midnightevents&stitle=Midnight Events Radio&codecID=3&pt=2&weblink=listen%2Eradionomy%2Ecom%2Fmidnight%2Devents%2Dradio%2Em3u  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1804&cn=midnightevents&stitle=Midnight Events Radio&codecID=3&pt=2&weblink=listen%2Eradionomy%2Ecom%2Fmidnight%2Devents%2Dradio%2Em3u  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1804&cn=midnightevents&stitle=Midnight Events Radio&codecID=3&pt=2&weblink=listen%2Eradionomy%2Ecom%2Fmidnight%2Devents%2Dradio%2Em3u  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1804&cn=midnightevents&stitle=Midnight Events Radio&codecID=3&pt=2&weblink=listen%2Eradionomy%2Ecom%2Fmidnight%2Devents%2Dradio%2Em3u  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=138&cn=noiselamia&stitle=Noise Fm 100,5&codecID=3&pt=2&weblink=66%2E90%2E104%2E41%3A8026  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=138&cn=noiselamia&stitle=Noise Fm 100,5&codecID=3&pt=2&weblink=66%2E90%2E104%2E41%3A8026  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=138&cn=noiselamia&stitle=Noise Fm 100,5&codecID=3&pt=2&weblink=66%2E90%2E104%2E41%3A8026  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=138&cn=noiselamia&stitle=Noise Fm 100,5&codecID=3&pt=2&weblink=66%2E90%2E104%2E41%3A8026  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=138&cn=noiselamia&stitle=Noise Fm 100,5&codecID=3&pt=2&weblink=66%2E90%2E104%2E41%3A8026  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1012&cn=octava&stitle=Octava Radio&codecID=3&pt=2&weblink=46%2E4%2E238%2E84%3A9998  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1012&cn=octava&stitle=Octava Radio&codecID=3&pt=2&weblink=46%2E4%2E238%2E84%3A9998  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1012&cn=octava&stitle=Octava Radio&codecID=3&pt=2&weblink=46%2E4%2E238%2E84%3A9998  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1012&cn=octava&stitle=Octava Radio&codecID=3&pt=2&weblink=46%2E4%2E238%2E84%3A9998  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1012&cn=octava&stitle=Octava Radio&codecID=3&pt=2&weblink=46%2E4%2E238%2E84%3A9998  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=927&cn=psychoradio&stitle=Psycho Radio&codecID=3&pt=2&weblink=psychoradio%2Eservemp3%2Ecom  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=927&cn=psychoradio&stitle=Psycho Radio&codecID=3&pt=2&weblink=psychoradio%2Eservemp3%2Ecom  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=927&cn=psychoradio&stitle=Psycho Radio&codecID=3&pt=2&weblink=psychoradio%2Eservemp3%2Ecom  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=927&cn=psychoradio&stitle=Psycho Radio&codecID=3&pt=2&weblink=psychoradio%2Eservemp3%2Ecom  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=927&cn=psychoradio&stitle=Psycho Radio&codecID=3&pt=2&weblink=psychoradio%2Eservemp3%2Ecom  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1954&cn=cancelled&stitle=Radio Cancelled&codecID=3&pt=2&weblink=www%2Ecancelled%2Egr%3A8015%2Fcancelled%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1954&cn=cancelled&stitle=Radio Cancelled&codecID=3&pt=2&weblink=www%2Ecancelled%2Egr%3A8015%2Fcancelled%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1954&cn=cancelled&stitle=Radio Cancelled&codecID=3&pt=2&weblink=www%2Ecancelled%2Egr%3A8015%2Fcancelled%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1954&cn=cancelled&stitle=Radio Cancelled&codecID=3&pt=2&weblink=www%2Ecancelled%2Egr%3A8015%2Fcancelled%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1954&cn=cancelled&stitle=Radio Cancelled&codecID=3&pt=2&weblink=www%2Ecancelled%2Egr%3A8015%2Fcancelled%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1881&cn=rockvelvetgr&stitle=Rock Velvet&codecID=3&pt=2&weblink=217%2E172%2E177%2E158%3A8515  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1881&cn=rockvelvetgr&stitle=Rock Velvet&codecID=3&pt=2&weblink=217%2E172%2E177%2E158%3A8515  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1881&cn=rockvelvetgr&stitle=Rock Velvet&codecID=3&pt=2&weblink=217%2E172%2E177%2E158%3A8515  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1881&cn=rockvelvetgr&stitle=Rock Velvet&codecID=3&pt=2&weblink=217%2E172%2E177%2E158%3A8515  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1881&cn=rockvelvetgr&stitle=Rock Velvet&codecID=3&pt=2&weblink=217%2E172%2E177%2E158%3A8515  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1104&cn=rockarolla&stitle=Rockarolla Radio&codecID=3&pt=2&weblink=5%2E9%2E15%2E53%3A9996  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1104&cn=rockarolla&stitle=Rockarolla Radio&codecID=3&pt=2&weblink=5%2E9%2E15%2E53%3A9996  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1104&cn=rockarolla&stitle=Rockarolla Radio&codecID=3&pt=2&weblink=5%2E9%2E15%2E53%3A9996  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1104&cn=rockarolla&stitle=Rockarolla Radio&codecID=3&pt=2&weblink=5%2E9%2E15%2E53%3A9996  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1104&cn=rockarolla&stitle=Rockarolla Radio&codecID=3&pt=2&weblink=5%2E9%2E15%2E53%3A9996  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=19&cn=studiofm1&stitle=Studio Fm1 105,4&codecID=3&pt=2&weblink=fm1%2Eteicrete%2Egr%3A8000%2Flive  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=19&cn=studiofm1&stitle=Studio Fm1 105,4&codecID=3&pt=2&weblink=fm1%2Eteicrete%2Egr%3A8000%2Flive  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=19&cn=studiofm1&stitle=Studio Fm1 105,4&codecID=3&pt=2&weblink=fm1%2Eteicrete%2Egr%3A8000%2Flive  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=19&cn=studiofm1&stitle=Studio Fm1 105,4&codecID=3&pt=2&weblink=fm1%2Eteicrete%2Egr%3A8000%2Flive  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=19&cn=studiofm1&stitle=Studio Fm1 105,4&codecID=3&pt=2&weblink=fm1%2Eteicrete%2Egr%3A8000%2Flive  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1983&cn=troll&stitle=Troll Radio&codecID=3&pt=2&weblink=stream%2Eradiojar%2Ecom%2Ftrollradio%2Dgr%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1983&cn=troll&stitle=Troll Radio&codecID=3&pt=2&weblink=stream%2Eradiojar%2Ecom%2Ftrollradio%2Dgr%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1983&cn=troll&stitle=Troll Radio&codecID=3&pt=2&weblink=stream%2Eradiojar%2Ecom%2Ftrollradio%2Dgr%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1983&cn=troll&stitle=Troll Radio&codecID=3&pt=2&weblink=stream%2Eradiojar%2Ecom%2Ftrollradio%2Dgr%2Emp3  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1983&cn=troll&stitle=Troll Radio&codecID=3&pt=2&weblink=stream%2Eradiojar%2Ecom%2Ftrollradio%2Dgr%2Emp3  THREW EXCEPTION BUT handled
+Fetching http://www.e-radio.gr/player/playerX.asp?sID=862&cn=wasteland&stitle=Wasteland&codecID=3&pt=2&weblink=208%2E43%2E121%2E133%3A8036 -->  
+Fetching http://www.e-radio.gr/player/playerX.asp?sID=1855&cn=zbutsam&stitle=Zbutsam&codecID=3&pt=2&weblink=radio%2Ezbutsam%2Enet%3A30570 -->  
+http://www.e-radio.gr/player/playerX.asp?sID=1165&cn=wave974&stitle=Wave 97,4&codecID=3&pt=2&weblink=85%2E25%2E106%2E137%3A8007%2Fstream  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1165&cn=wave974&stitle=Wave 97,4&codecID=3&pt=2&weblink=85%2E25%2E106%2E137%3A8007%2Fstream  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1165&cn=wave974&stitle=Wave 97,4&codecID=3&pt=2&weblink=85%2E25%2E106%2E137%3A8007%2Fstream  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1165&cn=wave974&stitle=Wave 97,4&codecID=3&pt=2&weblink=85%2E25%2E106%2E137%3A8007%2Fstream  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1165&cn=wave974&stitle=Wave 97,4&codecID=3&pt=2&weblink=85%2E25%2E106%2E137%3A8007%2Fstream  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1948&cn=patata&stitle=Radio Patata&codecID=3&pt=2&weblink=50%2E7%2E243%2E50%3A8082  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1948&cn=patata&stitle=Radio Patata&codecID=3&pt=2&weblink=50%2E7%2E243%2E50%3A8082  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1948&cn=patata&stitle=Radio Patata&codecID=3&pt=2&weblink=50%2E7%2E243%2E50%3A8082  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1948&cn=patata&stitle=Radio Patata&codecID=3&pt=2&weblink=50%2E7%2E243%2E50%3A8082  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1948&cn=patata&stitle=Radio Patata&codecID=3&pt=2&weblink=50%2E7%2E243%2E50%3A8082  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=52&cn=1431am&stitle=1431 AM 1431&codecID=3&pt=2&weblink=155%2E207%2E18%2E114%3A8000%2F1431med  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=52&cn=1431am&stitle=1431 AM 1431&codecID=3&pt=2&weblink=155%2E207%2E18%2E114%3A8000%2F1431med  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=52&cn=1431am&stitle=1431 AM 1431&codecID=3&pt=2&weblink=155%2E207%2E18%2E114%3A8000%2F1431med  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=52&cn=1431am&stitle=1431 AM 1431&codecID=3&pt=2&weblink=155%2E207%2E18%2E114%3A8000%2F1431med  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=52&cn=1431am&stitle=1431 AM 1431&codecID=3&pt=2&weblink=155%2E207%2E18%2E114%3A8000%2F1431med  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2113&cn=erock&stitle=e-Rock Radio&codecID=3&pt=2&weblink=europe4%2Enfs%2Egr%3A9000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2113&cn=erock&stitle=e-Rock Radio&codecID=3&pt=2&weblink=europe4%2Enfs%2Egr%3A9000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2113&cn=erock&stitle=e-Rock Radio&codecID=3&pt=2&weblink=europe4%2Enfs%2Egr%3A9000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2113&cn=erock&stitle=e-Rock Radio&codecID=3&pt=2&weblink=europe4%2Enfs%2Egr%3A9000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2113&cn=erock&stitle=e-Rock Radio&codecID=3&pt=2&weblink=europe4%2Enfs%2Egr%3A9000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1916&cn=midnightradio&stitle=Midnight Radio&codecID=3&pt=2&weblink=193%2E92%2E137%2E238%3A9096  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1916&cn=midnightradio&stitle=Midnight Radio&codecID=3&pt=2&weblink=193%2E92%2E137%2E238%3A9096  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1916&cn=midnightradio&stitle=Midnight Radio&codecID=3&pt=2&weblink=193%2E92%2E137%2E238%3A9096  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1916&cn=midnightradio&stitle=Midnight Radio&codecID=3&pt=2&weblink=193%2E92%2E137%2E238%3A9096  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1916&cn=midnightradio&stitle=Midnight Radio&codecID=3&pt=2&weblink=193%2E92%2E137%2E238%3A9096  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1986&cn=perfect1033&stitle=Perfect Radio 103,3&codecID=3&pt=2&weblink=streamyourdream%2Eorg%3A8000%2Fperfect  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1986&cn=perfect1033&stitle=Perfect Radio 103,3&codecID=3&pt=2&weblink=streamyourdream%2Eorg%3A8000%2Fperfect  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1986&cn=perfect1033&stitle=Perfect Radio 103,3&codecID=3&pt=2&weblink=streamyourdream%2Eorg%3A8000%2Fperfect  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1986&cn=perfect1033&stitle=Perfect Radio 103,3&codecID=3&pt=2&weblink=streamyourdream%2Eorg%3A8000%2Fperfect  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1986&cn=perfect1033&stitle=Perfect Radio 103,3&codecID=3&pt=2&weblink=streamyourdream%2Eorg%3A8000%2Fperfect  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1205&cn=spirit&stitle=Radio Spirit&codecID=3&pt=2&weblink=85%2E10%2E199%2E143%3A9988  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1205&cn=spirit&stitle=Radio Spirit&codecID=3&pt=2&weblink=85%2E10%2E199%2E143%3A9988  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1205&cn=spirit&stitle=Radio Spirit&codecID=3&pt=2&weblink=85%2E10%2E199%2E143%3A9988  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1205&cn=spirit&stitle=Radio Spirit&codecID=3&pt=2&weblink=85%2E10%2E199%2E143%3A9988  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1205&cn=spirit&stitle=Radio Spirit&codecID=3&pt=2&weblink=85%2E10%2E199%2E143%3A9988  THREW EXCEPTION BUT handled
+Fetching http://www.e-radio.gr/player/playerX.asp?sID=31&cn=rokharadio&stitle=Rockharadio&codecID=3&pt=2&weblink=player%2Erockharadio%2Ecom%3A8028 -->  
+http://www.e-radio.gr/player/playerX.asp?sID=1957&cn=skordo&stitle=Skordo Radio&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A7370  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1957&cn=skordo&stitle=Skordo Radio&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A7370  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1957&cn=skordo&stitle=Skordo Radio&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A7370  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1957&cn=skordo&stitle=Skordo Radio&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A7370  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1957&cn=skordo&stitle=Skordo Radio&codecID=3&pt=2&weblink=s1%2Eviastreaming%2Enet%3A7370  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=395&cn=atlantis&stitle=Atlantis 105,2&codecID=3&pt=2&weblink=stream%2Epasscast%2Enet%3A7030  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=395&cn=atlantis&stitle=Atlantis 105,2&codecID=3&pt=2&weblink=stream%2Epasscast%2Enet%3A7030  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=395&cn=atlantis&stitle=Atlantis 105,2&codecID=3&pt=2&weblink=stream%2Epasscast%2Enet%3A7030  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=395&cn=atlantis&stitle=Atlantis 105,2&codecID=3&pt=2&weblink=stream%2Epasscast%2Enet%3A7030  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=395&cn=atlantis&stitle=Atlantis 105,2&codecID=3&pt=2&weblink=stream%2Epasscast%2Enet%3A7030  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1763&cn=gagaradio&stitle=Gaga Radio&codecID=3&pt=2&weblink=188%2E121%2E60%2E170%3A6002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1763&cn=gagaradio&stitle=Gaga Radio&codecID=3&pt=2&weblink=188%2E121%2E60%2E170%3A6002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1763&cn=gagaradio&stitle=Gaga Radio&codecID=3&pt=2&weblink=188%2E121%2E60%2E170%3A6002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1763&cn=gagaradio&stitle=Gaga Radio&codecID=3&pt=2&weblink=188%2E121%2E60%2E170%3A6002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1763&cn=gagaradio&stitle=Gaga Radio&codecID=3&pt=2&weblink=188%2E121%2E60%2E170%3A6002  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1223&cn=lizard&stitle=Lizard Radio&codecID=3&pt=2&weblink=ciricaki33%2Emynewserver%2Ecom%3A8000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1223&cn=lizard&stitle=Lizard Radio&codecID=3&pt=2&weblink=ciricaki33%2Emynewserver%2Ecom%3A8000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1223&cn=lizard&stitle=Lizard Radio&codecID=3&pt=2&weblink=ciricaki33%2Emynewserver%2Ecom%3A8000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1223&cn=lizard&stitle=Lizard Radio&codecID=3&pt=2&weblink=ciricaki33%2Emynewserver%2Ecom%3A8000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=1223&cn=lizard&stitle=Lizard Radio&codecID=3&pt=2&weblink=ciricaki33%2Emynewserver%2Ecom%3A8000  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2020&cn=ebeeries&stitle=Mousikes Ebeeries&codecID=3&pt=2&weblink=188%2E40%2E75%2E77%3A9200  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2020&cn=ebeeries&stitle=Mousikes Ebeeries&codecID=3&pt=2&weblink=188%2E40%2E75%2E77%3A9200  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2020&cn=ebeeries&stitle=Mousikes Ebeeries&codecID=3&pt=2&weblink=188%2E40%2E75%2E77%3A9200  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2020&cn=ebeeries&stitle=Mousikes Ebeeries&codecID=3&pt=2&weblink=188%2E40%2E75%2E77%3A9200  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=2020&cn=ebeeries&stitle=Mousikes Ebeeries&codecID=3&pt=2&weblink=188%2E40%2E75%2E77%3A9200  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=675&cn=musicheaven&stitle=Music Heaven&codecID=3&pt=2&weblink=webradio%2Emusicheaven%2Egr%3A9850  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=675&cn=musicheaven&stitle=Music Heaven&codecID=3&pt=2&weblink=webradio%2Emusicheaven%2Egr%3A9850  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=675&cn=musicheaven&stitle=Music Heaven&codecID=3&pt=2&weblink=webradio%2Emusicheaven%2Egr%3A9850  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=675&cn=musicheaven&stitle=Music Heaven&codecID=3&pt=2&weblink=webradio%2Emusicheaven%2Egr%3A9850  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=675&cn=musicheaven&stitle=Music Heaven&codecID=3&pt=2&weblink=webradio%2Emusicheaven%2Egr%3A9850  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=683&cn=rockmachine&stitle=Rock Machine&codecID=2&pt=1&weblink=hotmedia%2Egr%3A8086%2Frock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=683&cn=rockmachine&stitle=Rock Machine&codecID=2&pt=1&weblink=hotmedia%2Egr%3A8086%2Frock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=683&cn=rockmachine&stitle=Rock Machine&codecID=2&pt=1&weblink=hotmedia%2Egr%3A8086%2Frock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=683&cn=rockmachine&stitle=Rock Machine&codecID=2&pt=1&weblink=hotmedia%2Egr%3A8086%2Frock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=683&cn=rockmachine&stitle=Rock Machine&codecID=2&pt=1&weblink=hotmedia%2Egr%3A8086%2Frock  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=73&cn=metalzone&stitle=Metal Zone&codecID=3&pt=2&weblink=radio%2Emetalzone%2Egr%3A8282  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=73&cn=metalzone&stitle=Metal Zone&codecID=3&pt=2&weblink=radio%2Emetalzone%2Egr%3A8282  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=73&cn=metalzone&stitle=Metal Zone&codecID=3&pt=2&weblink=radio%2Emetalzone%2Egr%3A8282  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=73&cn=metalzone&stitle=Metal Zone&codecID=3&pt=2&weblink=radio%2Emetalzone%2Egr%3A8282  THREW EXCEPTION BUT handled
+http://www.e-radio.gr/player/playerX.asp?sID=73&cn=metalzone&stitle=Metal Zone&codecID=3&pt=2&weblink=radio%2Emetalzone%2Egr%3A8282  THREW EXCEPTION BUT handled
+Written 3 to file, second links.
+http://www.e-radio.gr/player/ffmp3-config.swf
+valid url form
+Content: application/x-shockwave-flash
+application/x-shockwave-flash
+Total elapsed time is :219
+
+http://www.e-radio.gr/player/ffmp3-config.swf
+valid url form
+Content: application/x-shockwave-flash
+application/x-shockwave-flash
+Total elapsed time is :199
+
+http://www.e-radio.gr/player/ffmp3-config.swf
+valid url form

@@ -38,16 +38,16 @@ import org.jsoup.nodes.Document;
 
 public class DefaultCaller {
 	public static final int MAX_CONNECTION_ATTEMPTS  = 5;
-	public static final  String userAgent = new String("Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729)");
+	public static final  String userAgent = "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729)";
 	public static String filePath = null;
-	public static ArrayList<String> theUrls = new ArrayList<String>();
+	public static ArrayList<String> theUrls = new ArrayList<>();
 	/*
 	 * ArrayList eradioLinks holds the final radio stations links along with their titles
 	 * in this order:
 	 * <Stationtitle>
 	 * <StatonUrl>
 	 */
-	public static ArrayList<String> eradioLinks = new ArrayList<String>();
+	public static ArrayList<String> eradioLinks = new ArrayList<>();
 	
 	
 	/**
@@ -63,7 +63,7 @@ public class DefaultCaller {
         else{
 			Connection con = Jsoup.connect(theUrl).userAgent(userAgent);
 	        try {
-	        	doc = con.get();
+	        	doc = con.get();//doc = Jsoup.connect(theUrl).get();
 	        } catch (IOException e) {
 	        	print("%s  THREW EXCEPTION BUT handled", theUrl);
 	            threw = true;
