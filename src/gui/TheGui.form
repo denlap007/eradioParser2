@@ -278,7 +278,7 @@
           <Font name="Tahoma" size="16" style="1"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="H:\NetBeansProjects\GUI\src\gui\runIcon.jpg"/>
+          <Image iconType="3" name="/gui/runIcon2.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Run"/>
         <Property name="iconTextGap" type="int" value="10"/>

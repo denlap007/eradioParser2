@@ -1,0 +1,82 @@
+Arhagelos 94,1
+RadioActive 91,3
+Radio Olympos
+The POP Fm
+Aeolos 92,8
+Santorini Fm 106,4
+Derti Fm 104,9
+Top Fm 102,4
+Astra Radio 93,2
+Milos 108
+Radio Lesvos 99,1
+Lihnari 91,7
+Best Fm 98,1
+Mesogios 105,4
+Prisma FΜ 91,8
+EPAL Samou
+Anemos 95,6
+City 93
+Proto Programma Chiou 90,7
+Radio Faros 105,9
+Radio Samos 102
+Ant1 Aigaiou 105
+Radio Ionia 105,2
+Alithia Fm 96,3
+Radio 1 88
+Top Melody 104,9
+Aigaio Live 95,8
+Karpathos FM 101,3
+Palmos FM 94,9
+Pirate Radio 91
+Radio Kos 98
+Virgin 104,5
+Radio Kalloni 95,8
+Best Radio 101,1
+Radio Alpha Omega 90,4
+Space Fm 107,5
+Faros Fm 104
+KLIK FM 106,2
+M.E.A.S. Radio Lemnos 98
+Media 92
+Palmos 99,5
+Radio Alfa 96
+Xiaki Foni 90
+Fm 100 100
+Alithia Radio 95,7
+Armonia Radio 103,2
+I.M. Paronaxias 92,3
+Paros Fm 98,5
+Star Radio 104,6
+
+Nova Sport Fm 94,6
+Libero 107,4
+Athletic 104,2
+Arena Sports 89,4
+Sentra Fm 103,3
+Metropolis 95,5
+Top Fm 102,4
+Radiofonia Kissavou 97,8
+MotoManiac
+Radio Net 101,9
+Anemos 93,7
+Sport Fm 89,5
+Sport Fm 103,3
+Sport FM 89,5
+Athlitikos 106,7
+Super FM 89,6
+Nova Sport Fm 94,6
+Libero 107,4
+Athletic 104,2
+Arena Sports 89,4
+Sentra Fm 103,3
+Metropolis 95,5
+Top Fm 102,4
+Radiofonia Kissavou 97,8
+MotoManiac
+Radio Net 101,9
+Anemos 93,7
+Sport Fm 89,5
+Sport Fm 103,3
+Sport FM 89,5
+Athlitikos 106,7
+Super FM 89,6

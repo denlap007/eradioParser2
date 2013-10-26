@@ -123,7 +123,7 @@ public class CustomDialog extends javax.swing.JDialog {
         jLabel4.setText("Select from the lists to the left and Add to the playlist.");
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/playlist (Custom).png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/playlistIcon.png"))); // NOI18N
         jButton2.setText("Create Playlist");
         jButton2.setMaximumSize(new java.awt.Dimension(171, 60));
         jButton2.setMinimumSize(new java.awt.Dimension(171, 60));
@@ -276,7 +276,7 @@ public class CustomDialog extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, "Add items to your playlist first", "Empty playlist", JOptionPane.ERROR_MESSAGE);
         }
         else{
-            JOptionPane.showMessageDialog(this, "Process Started!");
+            //JOptionPane.showMessageDialog(this, "Process Started!");
             this.dispose();
         }
     }//GEN-LAST:event_jButton2ActionPerformed

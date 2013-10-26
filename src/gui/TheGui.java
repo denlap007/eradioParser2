@@ -25,10 +25,15 @@
 package gui;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.logging.Filter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.DefaultCaret;
 import javax.xml.parsers.ParserConfigurationException;
 import static noThreads.DefaultCaller.*;
@@ -46,16 +51,33 @@ import org.xml.sax.SAXException;
  */
 public class TheGui extends javax.swing.JFrame {
     public static  final String newline = "\n";
-    private boolean playlistType =false; //default for xspff, true fro m3u
+    private enum PlaylistType {M3U, XSPF};
+    private PlaylistType playlistType;
+    private String filePath;
+    //private boolean playlistType =false; //default for xspff, true fro m3u
 
     /**
      * Creates new form TheGui
      */
     public TheGui() {
+        playlistType = PlaylistType.XSPF;
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("Eradioparser v2.0 - create playlists");
         JDialogClosed = false;
+    }
+    
+    private void reinitialize(){
+        playlistType = PlaylistType.XSPF;
+        theUrls.clear();
+        eradioLinks.clear();
+        jRadioButton1.setEnabled(true);
+        jRadioButton2.setEnabled(true);
+        jRadioButton3.setEnabled(true);
+        jRadioButton4.setEnabled(true);
+        jButton1.setEnabled(true);
+        jMenu2.setEnabled(true);
+        jTextArea1.setText(null);
     }
 
     /**
@@ -136,7 +158,7 @@ public class TheGui extends javax.swing.JFrame {
         jLabel2.setText("Program run messages");
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\GUI\\src\\gui\\runIcon.jpg")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/runIcon2.png"))); // NOI18N
         jButton1.setText("Run");
         jButton1.setIconTextGap(10);
         jButton1.setMaximumSize(new java.awt.Dimension(65, 30));
@@ -281,15 +303,25 @@ public class TheGui extends javax.swing.JFrame {
                 System.exit(1);
             }
             
-            Elements links = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
+            filePath = saveAs();
             
-            for(Element link : links)
-                theUrls.add(link.attr("abs:href"));
-            
-            jTextArea1.append("...Processing All <e-radio> station links" + newline);
-            
-            Thread thr = new Thread(new CoreCode());
-            thr.start();
+            if (filePath!=null){
+                Elements links = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
+                for(Element link : links)
+                    theUrls.add(link.attr("abs:href"));
+                
+                jTextArea1.append("...Processing All <e-radio> station links" + newline);
+                
+                Thread thr = new Thread(new CoreCode());
+                thr.start();
+            }else{
+                    jRadioButton1.setEnabled(true);
+                    jRadioButton2.setEnabled(true);
+                    jRadioButton3.setEnabled(true);
+                    jRadioButton4.setEnabled(true);
+                    jButton1.setEnabled(true);
+                    jMenu2.setEnabled(true);                   
+                }
         }
         }
         
@@ -329,17 +361,29 @@ public class TheGui extends javax.swing.JFrame {
                 jButton1.setEnabled(true);
              }
             else{
+                filePath = saveAs();
                 
-                int choice = categories.indexOf(input);
-                print("category choice and input" + choice +" "+input);
- 
-                theUrls.add(categoryLinks.get(choice).attr("abs:href"));
-                JOptionPane.showMessageDialog(TheGui.this, "Processing category <" + StringEscapeUtils.unescapeHtml4(categoryLinks.get(choice).html()) + ">.");
-                print("...Processing category <" +
-                                              StringEscapeUtils.unescapeHtml4(categoryLinks.get(choice).html()) +
-                                                 ">.");
-                 Thread thr = new Thread(new CoreCode());
-                 thr.start(); 
+                if (filePath!=null){
+                    int choice = categories.indexOf(input);
+                    print("category choice and input" + choice +" "+input);
+                    
+                    theUrls.add(categoryLinks.get(choice).attr("abs:href"));
+                    //JOptionPane.showMessageDialog(TheGui.this, "Processing category <" + StringEscapeUtils.unescapeHtml4(categoryLinks.get(choice).html()) + ">.");
+
+                    print("...Processing category <" +
+                            StringEscapeUtils.unescapeHtml4(categoryLinks.get(choice).html()) 
+                            +">.");
+                    
+                    Thread thr = new Thread(new CoreCode());
+                    thr.start();
+                }else{
+                    jRadioButton1.setEnabled(true);
+                    jRadioButton2.setEnabled(true);
+                    jRadioButton3.setEnabled(true);
+                    jRadioButton4.setEnabled(true);
+                    jButton1.setEnabled(true);
+                    jMenu2.setEnabled(true);                   
+                }
             }
         }
     }
@@ -380,15 +424,28 @@ public class TheGui extends javax.swing.JFrame {
                 jButton1.setEnabled(true);
              }
             else{
-                int choice = locations.indexOf(input);
- 
-                theUrls.add(locationLinks.get(choice).attr("abs:href"));
-                JOptionPane.showMessageDialog(TheGui.this, "Processing location <" + StringEscapeUtils.unescapeHtml4(locationLinks.get(choice).html()) + ">.");
-                print("...Processing location <"+
-		    			 StringEscapeUtils.unescapeHtml4(locationLinks.get(choice).html())+
-		    			 ">.");
-                Thread thr = new Thread(new CoreCode());
-                thr.start();                
+                filePath = saveAs();
+                
+                if (filePath!=null){
+                    int choice = locations.indexOf(input);
+                    
+                    theUrls.add(locationLinks.get(choice).attr("abs:href"));
+                    
+                    //JOptionPane.showMessageDialog(TheGui.this, "Processing location <" + StringEscapeUtils.unescapeHtml4(locationLinks.get(choice).html()) + ">.");
+
+                    print("...Processing location <"+
+                            StringEscapeUtils.unescapeHtml4(locationLinks.get(choice).html())
+                            +">.");
+                    Thread thr = new Thread(new CoreCode());
+                    thr.start();
+                }else{
+                    jRadioButton1.setEnabled(true);
+                    jRadioButton2.setEnabled(true);
+                    jRadioButton3.setEnabled(true);
+                    jRadioButton4.setEnabled(true);
+                    jButton1.setEnabled(true);
+                    jMenu2.setEnabled(true);                   
+                }             
             }
         }
     }
@@ -437,21 +494,87 @@ public class TheGui extends javax.swing.JFrame {
                 jRadioButton4.setEnabled(true);
                 jButton1.setEnabled(true); 
                 jMenu2.setEnabled(true);
+                theUrls.clear();
             }
             else{
-                Thread thr = new Thread(new CoreCode());
-                thr.start();
+                filePath = saveAs();
+                if (filePath!=null){
+                    Thread thr = new Thread(new CoreCode());
+                    thr.start();
+                }else{
+                    jRadioButton1.setEnabled(true);
+                    jRadioButton2.setEnabled(true);
+                    jRadioButton3.setEnabled(true);
+                    jRadioButton4.setEnabled(true);
+                    jButton1.setEnabled(true);
+                    jMenu2.setEnabled(true);   
+                    theUrls.clear();
+                }
             }   
         }
     }
     
-    private class MenuOption5 implements Runnable{
+    public class OpenFileFilter extends FileFilter {
 
-        @Override
-        public void run() {
+    String description = "";
+    String fileExt = "";
 
-        }
+    public OpenFileFilter(String extension) {
+        fileExt = extension;
+    }
+
+    public OpenFileFilter(String extension, String typeDescription) {
+        fileExt = extension;
+        description = typeDescription;
+    }
+
+    @Override
+    public boolean accept(File f) {
+        if (f.isDirectory())
+            return true;
+        return (f.getName().toLowerCase().endsWith(fileExt));
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+    
+    public String getFileExt() {
+        return fileExt;
+    }
+}
+    
+    private String saveAs(){
+        final JFileChooser fc = new JFileChooser();
+        fc.setMultiSelectionEnabled(false);
+        fc.setAcceptAllFileFilterUsed(false);
+        OpenFileFilter m3u_filter = new OpenFileFilter(".m3u", "*.m3u, Playlist in m3u format");
+        OpenFileFilter xspf_filter = new OpenFileFilter(".xspf", "*.xspf, Playlist in xspf format");
         
+        
+        if (playlistType == PlaylistType.M3U)
+            fc.addChoosableFileFilter(new OpenFileFilter(".m3u", "*.m3u, Playlist in m3u format"));
+        else
+            fc.addChoosableFileFilter(new OpenFileFilter(".xspf", "*.xspf, Playlist in xspf format"));
+
+        
+        int returnVal = fc.showSaveDialog(this);
+	if (returnVal == JFileChooser.APPROVE_OPTION) {
+            File file = fc.getSelectedFile();
+            filePath = file.getPath();
+	                
+	    jTextArea1.append("Saving: " + file.getName() + "." + newline);            
+            if (playlistType == PlaylistType.M3U)
+                return file.getPath()+".m3u";
+            else
+                return file.getPath()+".xspf";
+      
+
+        }else {
+	    jTextArea1.append("Save command cancelled by user." + newline);
+            return null;
+        }
     }
       
     
@@ -466,7 +589,8 @@ public class TheGui extends javax.swing.JFrame {
             }
         }
         
-            private void coreActions() throws IOException{
+        
+        private void coreActions() throws IOException{  
             ArrayList<String> diskFiles = new ArrayList<>();    
             //variables that hold time in msec, in order to calculate
             //how much time lasts a program execution
@@ -500,19 +624,22 @@ public class TheGui extends javax.swing.JFrame {
                 Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
             }
             
-		
             Playlist p = new Playlist();
-            if (playlistType==true){
-                p.createM3uPlaylist();
-            }
-            else{
+            
+            switch (playlistType) {
+            case M3U:
+                p.createM3uPlaylist(filePath);
+                break;
+                    
+            case XSPF:
                 try {
-                    p.createPlaylist();
+                    p.createPlaylist(filePath);
                 } catch (    IOException | DocumentException | SAXException | ParserConfigurationException ex) {
                     Logger.getLogger(TheGui.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                break;
             }
-
+                 
 		
             endTime = System.currentTimeMillis();
             total_time = total_time + (endTime-startTime);
@@ -527,11 +654,7 @@ public class TheGui extends javax.swing.JFrame {
                 File a = new File(name);
                 a.delete();
             }
-            File tmp;
-            if(playlistType==true)
-                tmp = new File("playlist.m3u");
-            else
-                tmp = new File("playlist.xspf");
+            File tmp = new File(filePath);
             String thePath = tmp.getAbsolutePath();
 		
             jTextArea1.append("\n\nRUN SUMMARY:\n" +
@@ -547,7 +670,6 @@ public class TheGui extends javax.swing.JFrame {
             
             JOptionPane.showMessageDialog(TheGui.this, "Playlist created to: " 
                     + newline 
-                    + newline
                     + thePath 
                     + newline
                     +"Parsed: "
@@ -556,10 +678,8 @@ public class TheGui extends javax.swing.JFrame {
                     +"Valid links: " 
                     +DefaultCaller.eradioLinks.size()/2
                     +"/"
-                    +pl1.getStationLinks1().size()
-                    +".\n"
-                    + "The program will now exit...");   
-            System.exit(1);
+                    +pl1.getStationLinks1().size());   
+            reinitialize();
     }
         
     }
@@ -639,11 +759,11 @@ public class TheGui extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButtonMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem1ActionPerformed
-        playlistType = true;
+        playlistType = PlaylistType.M3U;
     }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
 
     private void jRadioButtonMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem2ActionPerformed
-        playlistType = false;
+         playlistType = PlaylistType.XSPF;
     }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed

@@ -73,7 +73,7 @@ public class Playlist {
 		writeXmlReadyLinks("xml_ready_links.txt", links);
 	 }
 	 
-	 public void createPlaylist() throws IOException, DocumentException, SAXException, ParserConfigurationException{
+	 public void createPlaylist(String filePath) throws IOException, DocumentException, SAXException, ParserConfigurationException{
 		 String xmlObject, title = null;
 		 boolean flag = true;
 		 XspfPlaylist playlist = new XspfPlaylist();
@@ -103,7 +103,7 @@ public class Playlist {
 		 playlist.setPlaylistTrackList(tracks);
 
 		 //or use Dom4j to output the playlist
-		 File file = new File("playlist.xspf");
+		 File file = new File(filePath);
 		 OutputFormat format = OutputFormat.createPrettyPrint();
 		 XMLWriter writer = new XMLWriter(new FileWriter(file), format);
 		 Document doc = DocumentHelper.parseText(playlist.makeTextDocument());
@@ -111,20 +111,20 @@ public class Playlist {
 		 writer.close();
 	 }
          
-         public void createM3uPlaylist(){
+         public void createM3uPlaylist(String filePath){
              try {
                  boolean flag=true;
-                 writeToFile("playlist.m3u", "#EXTM3U:\n");
+                 writeToFile(filePath, "#EXTM3U:\n");
                  //writeToFile("playlist.m3u8", "\n");
                  for(int i=0; i<eradioLinks.size();i++){
                      if (flag==true){
                          flag=false;
                          String theStation = "#EXTINF: "+eradioLinks.get(i);
-                         writeToFile("playlist.m3u", theStation);
+                         writeToFile(filePath, theStation);
                      }
                      else{
                          flag=true;
-                         writeToFile("playlist.m3u", eradioLinks.get(i));
+                         writeToFile(filePath, eradioLinks.get(i));
                      }
                  }
              } catch (IOException ex) {

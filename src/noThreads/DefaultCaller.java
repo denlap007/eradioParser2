@@ -39,7 +39,6 @@ import org.jsoup.nodes.Document;
 public class DefaultCaller {
 	public static final int MAX_CONNECTION_ATTEMPTS  = 5;
 	public static final  String userAgent = "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729)";
-	public static String filePath = null;
 	public static ArrayList<String> theUrls = new ArrayList<>();
 	/*
 	 * ArrayList eradioLinks holds the final radio stations links along with their titles
@@ -128,14 +127,6 @@ public class DefaultCaller {
 	public static void debug2(ArrayList<String> aList){
 		for(String a : aList)
 			print(a);	
-	}
-
-	public static String getFilePath() {
-		return filePath;
-	}
-
-	public static void setFilePath(String filePath) {
-		DefaultCaller.filePath = filePath;
 	}
 
 	public static ArrayList<String> getTheUrls() {

@@ -231,7 +231,7 @@
           <Font name="Times New Roman" size="16" style="1"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gui/playlist (Custom).png"/>
+          <Image iconType="3" name="/gui/playlistIcon.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Create Playlist"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">

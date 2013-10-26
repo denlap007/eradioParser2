@@ -2,6 +2,7 @@
 
 <playlist xmlns="http://xspf.org/ns/0/" version="1">
   <title>My Playlist</title>
+  <location>C:\Users\Dio\Desktop\eradioparser test\laaaaaaaaaaaaaaaaaa.xspf</location>
   <trackList>
     <track>
       <location>http://s1.onweb.gr:8408/</location>
