@@ -78,8 +78,7 @@ public class TheGui extends javax.swing.JFrame {
         jRadioButton2.setEnabled(true);
         jRadioButton3.setEnabled(true);
         jRadioButton4.setEnabled(true);
-        jButton1.setEnabled(true);
-        jMenu2.setEnabled(true);   
+        jButton1.setEnabled(true); 
         jRadioButton5.setEnabled(true);
         jRadioButton6.setEnabled(true);
         jTextArea1.setText(null);
@@ -119,9 +118,6 @@ public class TheGui extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -377,34 +373,6 @@ public class TheGui extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Options");
-        jMenu2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu2ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup2.add(jRadioButtonMenuItem1);
-        jRadioButtonMenuItem1.setText("Create .m3u playlist");
-        jRadioButtonMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonMenuItem1ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jRadioButtonMenuItem1);
-
-        buttonGroup2.add(jRadioButtonMenuItem2);
-        jRadioButtonMenuItem2.setSelected(true);
-        jRadioButtonMenuItem2.setText("Create .xspf playlist");
-        jRadioButtonMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jRadioButtonMenuItem2);
-
-        jMenuBar1.add(jMenu2);
-
         jMenu3.setText("About");
 
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/InfoIcon.png"))); // NOI18N
@@ -466,8 +434,7 @@ public class TheGui extends javax.swing.JFrame {
                     jRadioButton2.setEnabled(true);
                     jRadioButton3.setEnabled(true);
                     jRadioButton4.setEnabled(true);
-                    jButton1.setEnabled(true);
-                    jMenu2.setEnabled(true);    
+                    jButton1.setEnabled(true); 
                     jRadioButton5.setEnabled(true);
                     jRadioButton6.setEnabled(true);               
                 }
@@ -532,8 +499,7 @@ public class TheGui extends javax.swing.JFrame {
                     jRadioButton2.setEnabled(true);
                     jRadioButton3.setEnabled(true);
                     jRadioButton4.setEnabled(true);
-                    jButton1.setEnabled(true);
-                    jMenu2.setEnabled(true);          
+                    jButton1.setEnabled(true);        
                     jRadioButton5.setEnabled(true);
                     jRadioButton6.setEnabled(true);                
                 }
@@ -598,8 +564,7 @@ public class TheGui extends javax.swing.JFrame {
                     jRadioButton2.setEnabled(true);
                     jRadioButton3.setEnabled(true);
                     jRadioButton4.setEnabled(true);
-                    jButton1.setEnabled(true);
-                    jMenu2.setEnabled(true);       
+                    jButton1.setEnabled(true);    
                     jRadioButton5.setEnabled(true);
                     jRadioButton6.setEnabled(true);            
                 }             
@@ -650,7 +615,6 @@ public class TheGui extends javax.swing.JFrame {
                 jRadioButton3.setEnabled(true);
                 jRadioButton4.setEnabled(true);
                 jButton1.setEnabled(true); 
-                jMenu2.setEnabled(true);
                 jRadioButton5.setEnabled(true);
                 jRadioButton6.setEnabled(true);
                 theUrls.clear();
@@ -666,7 +630,6 @@ public class TheGui extends javax.swing.JFrame {
                     jRadioButton3.setEnabled(true);
                     jRadioButton4.setEnabled(true);
                     jButton1.setEnabled(true);
-                    jMenu2.setEnabled(true);
                     jRadioButton5.setEnabled(true);
                     jRadioButton6.setEnabled(true);
                     theUrls.clear();
@@ -847,7 +810,6 @@ public class TheGui extends javax.swing.JFrame {
 
         
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jMenu2.setEnabled(false);
         jRadioButton5.setEnabled(false);
         jRadioButton6.setEnabled(false);
         
@@ -894,7 +856,8 @@ public class TheGui extends javax.swing.JFrame {
             t.start();            
         }
         else{
-            jMenu2.setEnabled(true);
+            jRadioButton5.setEnabled(true);
+            jRadioButton6.setEnabled(true);
             JOptionPane.showMessageDialog(this, "You need to make a choice!");
         }
         
@@ -921,18 +884,6 @@ public class TheGui extends javax.swing.JFrame {
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton1ActionPerformed
-
-    private void jRadioButtonMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem1ActionPerformed
-        playlistType = PlaylistType.M3U;
-    }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
-
-    private void jRadioButtonMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem2ActionPerformed
-         playlistType = PlaylistType.XSPF;
-    }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
-
-    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu2ActionPerformed
 
     private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
         jTextArea1 = jTextAreaTemp;
@@ -1010,7 +961,6 @@ public class TheGui extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
@@ -1029,8 +979,6 @@ public class TheGui extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
     public static javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
