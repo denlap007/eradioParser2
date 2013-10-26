@@ -122,3 +122,19 @@ MotoManiac
 _______BAD_LINK_______http://eco.onestreaming.com:8400/
 Sport FM 89,5
 _______BAD_LINK_______http://85.14.6.155:8005
+MotoManiac
+_______BAD_LINK_______http://eco.onestreaming.com:8400/
+Sport FM 89,5
+_______BAD_LINK_______http://85.14.6.155:8005
+Radio Faros 92,7
+_______BAD_LINK_______http://s6.onweb.gr:8056/
+Paradosiako Thessalias
+_______BAD_LINK_______http://85.25.15.133:8042/
+Radio Nostalgia
+_______BAD_LINK_______http://radionostalgiagr.dyndns.org:2314/
+Radio Faros 92,7
+_______BAD_LINK_______http://s6.onweb.gr:8056/
+Paradosiako Thessalias
+_______BAD_LINK_______http://85.25.15.133:8042/
+Radio Nostalgia
+_______BAD_LINK_______http://radionostalgiagr.dyndns.org:2314/

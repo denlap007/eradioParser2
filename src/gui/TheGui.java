@@ -188,6 +188,7 @@ public class TheGui extends javax.swing.JFrame {
         buttonGroup3.add(jRadioButton5);
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jRadioButton5.setText(".m3u playlist");
+        jRadioButton5.setToolTipText("Select to create .m3u Playlist");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton5ActionPerformed(evt);
@@ -198,6 +199,7 @@ public class TheGui extends javax.swing.JFrame {
         jRadioButton6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jRadioButton6.setSelected(true);
         jRadioButton6.setText(".xspf playlist");
+        jRadioButton6.setToolTipText("Select to create .xspf Playlist");
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton6ActionPerformed(evt);
@@ -313,6 +315,7 @@ public class TheGui extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 21)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/runIcon2.png"))); // NOI18N
         jButton1.setText("Run");
+        jButton1.setToolTipText("Click to run");
         jButton1.setIconTextGap(10);
         jButton1.setMaximumSize(new java.awt.Dimension(65, 30));
         jButton1.setMinimumSize(new java.awt.Dimension(65, 30));
