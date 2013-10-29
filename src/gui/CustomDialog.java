@@ -1,26 +1,25 @@
 /**
-	eradioParser: This program guides the user through 
-        a graphical user interface to create playlists 
-        from the stations registered on http://e-radio.gr
-    
-	Copyright (C) 2013  Lappas Dionysis
-    
-    This file is part of eradioParser.
-
-    eradioParser is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    eradioParser is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>
-    
-    You may contact the author at: dio@freelabs.net
+ * eradioParser: This program guides the user through a graphical user interface
+ * to create playlists from the stations registered on http://e-radio.gr
+ *
+ * Copyright (C) 2013 Lappas Dionysis
+ *
+ * This file is part of eradioParser.
+ *
+ * eradioParser is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option) any later
+ * version.
+ *
+ * eradioParser is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>
+ *
+ * You may contact the author at: dio@freelabs.net
  */
 package gui;
 
@@ -244,80 +243,77 @@ public class CustomDialog extends javax.swing.JDialog {
         int[] list1SelectedIndices = jList1.getSelectedIndices();
         int[] list2SelectedIndices = jList2.getSelectedIndices();
         String tmp = null;
-        
-        if (list1SelectedIndices.length==0 && list2SelectedIndices.length==0){
+
+        if (list1SelectedIndices.length == 0 && list2SelectedIndices.length == 0) {
             JOptionPane.showMessageDialog(this, "You need to make a choice first!");
-        }
-        else if (list1SelectedIndices.length!=0 && list2SelectedIndices.length!=0){
-            for (int i=0; i<list1SelectedIndices.length; i++){
+        } else if (list1SelectedIndices.length != 0 && list2SelectedIndices.length != 0) {
+            for (int i = 0; i < list1SelectedIndices.length; i++) {
                 //first add the items to the playlist
-                tmp = (String) listModel1.elementAt(list1SelectedIndices[i]-i);
+                tmp = (String) listModel1.elementAt(list1SelectedIndices[i] - i);
                 listModel3.addElement(tmp);
-                
+
                 //remove item from 1st list
-                listModel1.remove(list1SelectedIndices[i]-i);
-                
-                int choice = list1SelectedIndices[i]-i;
+                listModel1.remove(list1SelectedIndices[i] - i);
+
+                int choice = list1SelectedIndices[i] - i;
                 theUrls.add(categoryLinks.get(choice).attr("abs:href"));
-            } 
-            
-            for (int i=0; i<list2SelectedIndices.length; i++){
+            }
+
+            for (int i = 0; i < list2SelectedIndices.length; i++) {
                 //first add the items to the playlist
-                tmp = (String) listModel2.elementAt(list2SelectedIndices[i]-i);
+                tmp = (String) listModel2.elementAt(list2SelectedIndices[i] - i);
                 listModel3.addElement(tmp);
-                
+
                 //remove item from 2nd list
-                listModel2.remove(list2SelectedIndices[i]-i);
-                
-                int choice = list2SelectedIndices[i]-i;
+                listModel2.remove(list2SelectedIndices[i] - i);
+
+                int choice = list2SelectedIndices[i] - i;
                 theUrls.add(locationLinks.get(choice).attr("abs:href"));
             }
-        }else if (list1SelectedIndices.length!=0){
-            
-            for (int i=0; i<list1SelectedIndices.length; i++){
+        } else if (list1SelectedIndices.length != 0) {
+
+            for (int i = 0; i < list1SelectedIndices.length; i++) {
                 //first add the items to the playlist
-                tmp = (String) listModel1.elementAt(list1SelectedIndices[i]-i);
+                tmp = (String) listModel1.elementAt(list1SelectedIndices[i] - i);
                 listModel3.addElement(tmp);
-                
+
                 //remove item from 1st list
-                listModel1.remove(list1SelectedIndices[i]-i);
-                
-                int choice = list1SelectedIndices[i]-i;
+                listModel1.remove(list1SelectedIndices[i] - i);
+
+                int choice = list1SelectedIndices[i] - i;
                 theUrls.add(categoryLinks.get(choice).attr("abs:href"));
-            }  
-        }
-        else if (list2SelectedIndices.length!=0){
-            
-            for (int i=0; i<list2SelectedIndices.length; i++){
+            }
+        } else if (list2SelectedIndices.length != 0) {
+
+            for (int i = 0; i < list2SelectedIndices.length; i++) {
                 //first add the items to the playlist
-                tmp = (String) listModel2.elementAt(list2SelectedIndices[i]-i);
+                tmp = (String) listModel2.elementAt(list2SelectedIndices[i] - i);
                 listModel3.addElement(tmp);
-                
+
                 //remove item from 2nd list
-                listModel2.remove(list2SelectedIndices[i]-i);
-                
-                int choice = list2SelectedIndices[i]-i;
+                listModel2.remove(list2SelectedIndices[i] - i);
+
+                int choice = list2SelectedIndices[i] - i;
                 theUrls.add(locationLinks.get(choice).attr("abs:href"));
             }
         }
-        
+
         int sizeOfList1 = listModel1.getSize();
         int sizeOfList2 = listModel2.getSize();
-        
-        if (sizeOfList1==0 && sizeOfList2==0){
+
+        if (sizeOfList1 == 0 && sizeOfList2 == 0) {
             jButton1.setEnabled(false);
-            
+
         }
 
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
-        if (listModel3.isEmpty()==true){
+
+        if (listModel3.isEmpty() == true) {
             JOptionPane.showMessageDialog(this, "Add items to your playlist first", "Empty playlist", JOptionPane.ERROR_MESSAGE);
-        }
-        else{
+        } else {
             //JOptionPane.showMessageDialog(this, "Process Started!");
             this.dispose();
         }
@@ -328,7 +324,6 @@ public class CustomDialog extends javax.swing.JDialog {
         theUrls.clear();
         TheGui.JDialogClosed = true;
     }//GEN-LAST:event_formWindowClosing
-
     private Elements categoryLinks, locationLinks;
     private String[] locations;
     private String[] categories;

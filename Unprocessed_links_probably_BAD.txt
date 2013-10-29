@@ -11,3 +11,7 @@ http://e-radio.gr/player/player.asp?sID=1870
 http://e-radio.gr/player/player.asp?sID=1869
 http://e-radio.gr/player/player.asp?sID=1707
 http://e-radio.gr/player/player.asp?sID=1707
+http://e-radio.gr/player/player.asp?sID=1707
+http://e-radio.gr/player/player.asp?sID=1707
+http://e-radio.gr/player/player.asp?sID=1
+http://e-radio.gr/player/player.asp?sID=8
