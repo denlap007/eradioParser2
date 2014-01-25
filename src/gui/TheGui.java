@@ -481,7 +481,7 @@ public class TheGui extends javax.swing.JFrame {
                 System.exit(1);
             }
 
-            Elements categoryLinks = doc.select("div[id=paneContainer]").select("a[href*=/categories/]");
+            Elements categoryLinks = doc.select("div[class=menuOptions]").select("a[href*=/categories/]");
 
             ArrayList<String> categories = new ArrayList<>();
 
@@ -546,7 +546,7 @@ public class TheGui extends javax.swing.JFrame {
             }
 
 
-            Elements locationLinks = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
+            Elements locationLinks = doc.select("div[class=menuOptions]").select("a[href*=/locations/]");
 
             ArrayList<String> locations = new ArrayList<>();
 
@@ -609,7 +609,7 @@ public class TheGui extends javax.swing.JFrame {
             }
 
             //get the locations
-            Elements locationLinks = doc.select("div[id=paneContainer]").select("a[href*=/locations/]");
+            Elements locationLinks = doc.select("div[class=menuOptions]").select("a[href*=/locations/]");
             ArrayList<String> locations = new ArrayList<>();
 
             for (int i = 0; i < locationLinks.size(); i++) {
@@ -620,7 +620,7 @@ public class TheGui extends javax.swing.JFrame {
             theLocations = locations.toArray(theLocations);
 
             //get the categories 
-            Elements categoryLinks = doc.select("div[id=paneContainer]").select("a[href*=/categories/]");
+            Elements categoryLinks = doc.select("div[class=menuOptions]").select("a[href*=/categories/]");
             ArrayList<String> categories = new ArrayList<>();
 
             for (int i = 0; i < categoryLinks.size(); i++) {
